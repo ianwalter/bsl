@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const meow = require('meow')
 const signale = require('signale')
 const { start, stop } = require('.')
