@@ -1021,13 +1021,13 @@ concordance@^4.0.0:
     well-known-symbols "^2.0.0"
 
 conf@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/conf/-/conf-4.0.0.tgz#c675f84ce1b8efeab21cd1399021b4f03b75ded2"
-  integrity sha512-g3kLYbvtnC6w1IEBalWQoetLq8WUsYVncW7mTBPsPKw4SkNGBj3AaEiRXYPCCW9DPqKdhs1S+f6babEZju0EhA==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/conf/-/conf-4.0.1.tgz#a001a88fc2e999d0691fc9ebd89145d99edc9f1f"
+  integrity sha512-2imcmy0JZtOlksSkbbG/6h18YnNcg3GPTrQEofHXNYxqo2pofOBAHFKtqrQhY6KqNA9sxo0rJugGdjR8SnUZww==
   dependencies:
     ajv "^6.10.0"
-    dot-prop "^4.2.0"
-    env-paths "^2.1.0"
+    dot-prop "^5.0.0"
+    env-paths "^2.2.0"
     json-schema-typed "^7.0.0"
     make-dir "^3.0.0"
     pkg-up "^3.0.1"
@@ -1340,6 +1340,13 @@ dot-prop@^4.1.0, dot-prop@^4.2.0:
   dependencies:
     is-obj "^1.0.0"
 
+dot-prop@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.0.0.tgz#64b7968af349c3a9f966aa12658dbd5829f6b953"
+  integrity sha512-RTmaF2jx3nOBO2GvtFqjnDLycjFUMqt+2pwRx7JVYa81lDauoj9aNkyrJI2ikR58FbBIchiIlRiGG+muLJ4oHQ==
+  dependencies:
+    is-obj "^1.0.0"
+
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -1385,7 +1392,7 @@ entities@^1.1.1:
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
   integrity sha512-f2LZMYl1Fzu7YSBKg+RoROelpOaNrcGmE9AZubeDfrCEia483oW4MI4VyFd5VNHIgQ/7qm1I0wUHK1eJnn2y2w==
 
-env-paths@^2.1.0:
+env-paths@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-2.2.0.tgz#cdca557dc009152917d6166e2febe1f039685e43"
   integrity sha512-6u0VYSCo/OW6IoD5WCLLy9JUGARbamfSavcNXry/eu8aHVFei6CD3Sw+VGX5alea1i9pgPHW0mbu6Xj0uBh7gA==
