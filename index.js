@@ -6,7 +6,7 @@ const fkill = require('fkill')
 const config = new Conf({ projectName: 'bsl' })
 const defaultOptions = { force: true, forceLocal: true }
 
-async function start (options) {
+async function start (options = {}) {
   return new Promise((resolve, reject) => {
     const local = new Local()
     local.start(Object.assign(defaultOptions, options), err => {
