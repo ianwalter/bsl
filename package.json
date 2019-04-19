@@ -6,7 +6,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "lint": "eslint .",
-    "test": "ava"
+    "test": "bff"
   },
   "bin": {
     "bsl": "cli.js"
@@ -32,13 +32,14 @@
   "dependencies": {
     "browserstack-local": "^1.3.7",
     "conf": "^4.0.0",
+    "dotenv": "^7.0.0",
     "fkill": "^6.1.0",
     "meow": "^5.0.0",
     "signale": "^1.4.0"
   },
   "devDependencies": {
+    "@ianwalter/bff": "^3.0.0",
     "@ianwalter/eslint-config": "^1.1.2",
-    "ava": "^1.4.1",
     "np": "^4.0.2"
   },
   "eslintConfig": {
