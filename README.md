@@ -5,7 +5,7 @@
 
 ## Archived
 
-This functionality has been rolled into [bff-webdriver](https://github.com/ianwalter/bff-webdriver)
+This functionality has been rolled into [bff-webdriver](https://github.com/ianwalter/bff-webdriver).
 
 ## Installation
 
