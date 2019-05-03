@@ -86,6 +86,13 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.4.3.tgz#eb3ac80f64aa101c907d4ce5406360fe75b7895b"
   integrity sha512-gxpEUhTS1sGA63EGQGuA+WESPR/6tz6ng7tSHFCmaTJK/cGK8y37cBTspX+U2xCAue2IQVvF6Z0oigmjwD8YGQ==
 
+"@babel/runtime@^7.3.1":
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.4.tgz#dc2e34982eb236803aa27a07fea6857af1b9171d"
+  integrity sha512-w0+uT71b6Yi7i5SE0co4NioIpSYS6lLiXvCzWzGSKvpK5vdQtCbICHMj+gbAKAOtxiV6HsVh/MBdaF9EQ6faSg==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.0":
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.4.0.tgz#12474e9c077bae585c5d835a95c0b0b790c25c8b"
@@ -119,12 +126,12 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@ianwalter/bff@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-3.0.0.tgz#16d55d6540ffa780a14fd63d8d93b65e92efbd42"
-  integrity sha512-9R58f2fqvVWCiqJn31hEbor6jJCCsbBGxtR/OKYZyn7MeZy/NOn04xVszZk/oVcqo5S0zZiEloO0LQfkp/iQaA==
+"@ianwalter/bff@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-4.0.1.tgz#e0e5011ad3420752d425b72165e07c42762aad21"
+  integrity sha512-+ItJXAea9eBNSLXCzWaEKh82R0pDWwKrSWEFrAyRKUc00fKdTC7XBXY0qJYUiGZxwtyW5rl0RkPOH3XoBV8HCA==
   dependencies:
-    "@ianwalter/cli" "^1.0.0"
+    "@ianwalter/cli" "^1.1.1"
     "@ianwalter/print" "^2.3.0"
     common-tags "^1.8.0"
     expect "^24.7.1"
@@ -134,11 +141,13 @@
     p-timeout "^3.1.0"
     workerpool "^3.1.2"
 
-"@ianwalter/cli@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/cli/-/cli-1.0.0.tgz#73d803468c11bde5afac4b5eedfc4ac33ae36f12"
-  integrity sha512-MDcYFW9Ksb2jHfQ/v2QJRsEp/5Raz9FxUx2GLGjLWuqfk1GwWOGxJ9As7tJAuE9stVbZa1o/Gi753QWb8PZzQw==
+"@ianwalter/cli@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/cli/-/cli-1.1.1.tgz#544ea8d0dbd207aaf867e01e861be908c161ae7d"
+  integrity sha512-N7cdoA2llrZDqifD09aqFuwS4iUlxDHea5Wn29TIyEcYHo3JHjwfkjKOdKSqa3t7/KZqod5OEOWd8dKDqc6HMA==
   dependencies:
+    "@ianwalter/merge" "^3.0.0"
+    dot-prop "^5.0.0"
     getopts "^2.2.4"
     pkg-conf "^3.1.0"
     yargs "^13.2.2"
@@ -160,6 +169,13 @@
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/log/-/log-3.0.0.tgz#c85f7343e28e98d0a4c872a42e6bdd6d8b302e8d"
   integrity sha512-CAB1LaZUDUvQexuZYXmRhaFrpNqguIwA+ciB8+uvDm9dakNX3H+Yd7VIOisvx/y4GljH2hSrlTfCzhy14/0/YQ==
+
+"@ianwalter/merge@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-3.0.0.tgz#f2b88f73d7491e1d1f13a4cfd35a8dc452c0ad5e"
+  integrity sha512-SrJt5zo4BjRHKQ6U0ErJlVgXQA2HLYRL1nGd8Vti84rbztwrsmwhxKUSsOHQWEY7/8MqlR2O22oDPJdLnIQ9RQ==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
 
 "@ianwalter/print@^2.3.0":
   version "2.3.0"
@@ -3350,6 +3366,11 @@ redent@^2.0.0:
   dependencies:
     indent-string "^3.0.0"
     strip-indent "^2.0.0"
+
+regenerator-runtime@^0.13.2:
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.2.tgz#32e59c9a6fb9b1a4aff09b4930ca2d4477343447"
+  integrity sha512-S/TQAZJO+D3m9xeN1WTI8dLKBBiRgXBlTJvbWjCThHWZj9EvHK70Ff50/tYj2J/fvBY6JtFVwRuazHN2E7M9BA==
 
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
