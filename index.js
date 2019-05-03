@@ -3,30 +3,27 @@ require('dotenv').config()
 const { homedir } = require('os')
 const { join, dirname } = require('path')
 const execa = require('execa')
-const Conf = require('conf')
-const fkill = require('fkill')
 const fs = require('@ianwalter/fs')
 const { print } = require('@ianwalter/print')
 const makeDir = require('make-dir')
 
 const binary = join(__dirname, 'BrowserStackLocal')
-const config = new Conf({ projectName: 'bsl' })
 const defaultOptions = {
+  key: process.env.BROWSERSTACK_ACCESS_KEY,
   force: true,
-  'force-local': true,
-  key: process.env.BROWSERSTACK_ACCESS_KEY
+  'force-local': true
 }
-const toFlags = (acc, [key, value]) => acc.concat([`--${key}`, value])
+const toFlags = (acc, [key, value]) => (
+  value === true ? acc.concat([`--${key}`]) : acc.concat([`--${key}`, value])
+)
 
 async function start (options) {
   const flags = Object.entries(Object.assign(defaultOptions, options))
-  const execaOptions = { detached: true }
-  const local = await execa(binary, flags.reduce(toFlags, []), execaOptions)
-  config.set('pid', local.pid)
+  return execa(binary, flags.reduce(toFlags, []))
 }
 
-async function stop () {
-  return fkill(config.get('pid'))
+async function stop (options) {
+  return execa(binary, Object.entries(options).reduce(toFlags, []))
 }
 
 async function checkIfGlobalBinaryExists () {

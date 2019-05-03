@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "eslint .",
     "test": "bff",
-    "postinstall": "./postinstall.js"
+    "postinstall": "./postinstall.js",
+    "bsl": "./cli.js"
   },
   "bin": {
     "bsl": "cli.js"
@@ -37,11 +38,9 @@
     "@ianwalter/fs": "^1.1.0",
     "@ianwalter/print": "^2.3.1",
     "common-tags": "^1.8.0",
-    "conf": "^4.0.2",
     "dotenv": "^8.0.0",
     "download": "^7.1.0",
     "execa": "^1.0.0",
-    "fkill": "^6.1.0",
     "make-dir": "^3.0.0"
   },
   "devDependencies": {

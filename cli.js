@@ -11,10 +11,10 @@ async function run () {
 
   try {
     if (command === 'start') {
-      const pid = await start(config)
-      print.success(`BrowserStack Local started as process ${pid}`)
+      await start({ ...config, daemon: 'start' })
+      print.success('BrowserStack Local started')
     } else if (command === 'stop') {
-      await stop()
+      await stop({ daemon: 'stop' })
       print.success('BrowserStack Local stopped')
     } else if (command === 'move') {
       await move()

@@ -7,6 +7,5 @@ test('tunneling localhost', async ({ browser, expect }) => {
   expect(local.pid).toBeGreaterThan(0)
   const server = await createTestServer()
   await browser.url(server.url)
-  expect()
   await stop()
 })

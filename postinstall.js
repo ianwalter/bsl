@@ -15,21 +15,30 @@ async function run () {
     await fs.symlink(target, binary)
     print.success(`Using global binary at ${target}`)
   } else {
-    let url = 'https://s3.amazonaws.com/bstack-local-prod/BrowserStackLocal-darwin-x64'
-    if (process.platform === 'linux') {
-      url = 'https://s3.amazonaws.com/bstack-local-prod/BrowserStackLocal-linux-x64'
-    } else if (process.platform === 'win32') {
-      url = 'https://s3.amazonaws.com/bstack-local-prod/BrowserStackLocal.exe'
+    let localBinaryDoesNotExist = false
+    try {
+      await fs.access(binary)
+    } catch (err) {
+      localBinaryDoesNotExist = true
     }
-    await download(url, __dirname, { filename: 'BrowserStackLocal' })
-    await fs.chmod(binary, 755)
-    print.success(
-      `Downloaded BrowserStackLocal binary for ${process.platform}.`, '\n',
-      oneLine`
-        Run ${chalk.magenta('yarn bsl move')} to move the binary to your home
-        directory if you want other installations to re-use it.
-      `
-    )
+
+    if (localBinaryDoesNotExist) {
+      let url = 'https://s3.amazonaws.com/bstack-local-prod/BrowserStackLocal-darwin-x64'
+      if (process.platform === 'linux') {
+        url = 'https://s3.amazonaws.com/bstack-local-prod/BrowserStackLocal-linux-x64'
+      } else if (process.platform === 'win32') {
+        url = 'https://s3.amazonaws.com/bstack-local-prod/BrowserStackLocal.exe'
+      }
+      await download(url, __dirname, { filename: 'BrowserStackLocal' })
+      await fs.chmod(binary, 755)
+      print.success(
+        `Downloaded BrowserStackLocal binary for ${process.platform}.`, '\n',
+        oneLine`
+          Run ${chalk.magenta('yarn bsl move')} to move the binary to your home
+          directory if you want other installations to re-use it.
+        `
+      )
+    }
   }
 }
 
