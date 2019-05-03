@@ -37,20 +37,20 @@
     "@ianwalter/fs": "^1.1.0",
     "@ianwalter/print": "^2.3.1",
     "common-tags": "^1.8.0",
-    "conf": "^4.0.0",
-    "dotenv": "^7.0.0",
+    "conf": "^4.0.2",
+    "dotenv": "^8.0.0",
     "download": "^7.1.0",
     "execa": "^1.0.0",
     "fkill": "^6.1.0",
     "make-dir": "^3.0.0"
   },
   "devDependencies": {
-    "@ianwalter/bff": "^3.0.0",
-    "@ianwalter/bff-webdriver": "^1.1.0",
+    "@ianwalter/bff": "^4.0.1",
+    "@ianwalter/bff-webdriver": "^2.0.2",
     "@ianwalter/eslint-config": "^1.1.2",
     "@ianwalter/renovate-config": "^1.1.0",
     "@ianwalter/test-server": "^1.3.0",
-    "np": "^4.0.2"
+    "np": "^5.0.1"
   },
   "eslintConfig": {
     "root": true,
