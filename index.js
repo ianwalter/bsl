@@ -11,15 +11,17 @@ const makeDir = require('make-dir')
 
 const binary = join(__dirname, 'BrowserStackLocal')
 const config = new Conf({ projectName: 'bsl' })
-const defaultOptions = { force: true, forceLocal: true }
+const defaultOptions = {
+  force: true,
+  'force-local': true,
+  key: process.env.BROWSERSTACK_ACCESS_KEY
+}
 const toFlags = (acc, [key, value]) => acc.concat([`--${key}`, value])
 
-async function start (config) {
-  const flags = Object
-    .assign(defaultOptions, config)
-    .entries()
-    .reduce(toFlags, [])
-  const local = await execa(binary, ...flags)
+async function start (options) {
+  const flags = Object.entries(Object.assign(defaultOptions, options))
+  const execaOptions = { detached: true }
+  const local = await execa(binary, flags.reduce(toFlags, []), execaOptions)
   config.set('pid', local.pid)
 }
 
