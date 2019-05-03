@@ -40,13 +40,13 @@ async function checkIfGlobalBinaryExists () {
 async function move () {
   const { target, exists } = await checkIfGlobalBinaryExists()
   if (exists) {
-    print.error(`BrowserStackLocal binary already exists at ${target}`)
+    print.error('BrowserStackLocal binary already exists at', target)
     process.exit(1)
   } else {
     await makeDir(dirname(target))
     await fs.rename(binary, target)
     await fs.symlink(target, binary)
-    print.success(`BrowserStackLocal binary moved to ${target}`)
+    print.success('BrowserStackLocal binary moved to', target)
   }
 }
 

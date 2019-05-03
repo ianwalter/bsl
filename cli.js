@@ -14,7 +14,7 @@ async function run () {
       await start({ ...config, daemon: 'start' })
       print.success('BrowserStack Local started')
     } else if (command === 'stop') {
-      await stop({ daemon: 'stop' })
+      await stop()
       print.success('BrowserStack Local stopped')
     } else if (command === 'move') {
       await move()
