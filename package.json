@@ -6,14 +6,16 @@
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "lint": "eslint .",
-    "test": "bff"
+    "test": "bff",
+    "postinstall": "./postinstall.js"
   },
   "bin": {
     "bsl": "cli.js"
   },
   "files": [
     "index.js",
-    "cli.js"
+    "cli.js",
+    "postinstall.js"
   ],
   "repository": {
     "type": "git",
@@ -22,7 +24,8 @@
   "keywords": [
     "browserstack",
     "local",
-    "cli"
+    "cli",
+    "tunnel"
   ],
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "bugs": {
@@ -31,20 +34,29 @@
   "homepage": "https://github.com/ianwalter/bsl#readme",
   "dependencies": {
     "@ianwalter/cli": "^1.1.1",
+    "@ianwalter/fs": "^1.1.0",
     "@ianwalter/print": "^2.3.1",
     "conf": "^4.0.0",
     "dotenv": "^7.0.0",
+    "download": "^7.1.0",
+    "execa": "^1.0.0",
     "fkill": "^6.1.0"
   },
   "devDependencies": {
     "@ianwalter/bff": "^3.0.0",
     "@ianwalter/bff-webdriver": "^1.1.0",
     "@ianwalter/eslint-config": "^1.1.2",
+    "@ianwalter/renovate-config": "^1.1.0",
     "@ianwalter/test-server": "^1.3.0",
     "np": "^4.0.2"
   },
   "eslintConfig": {
     "root": true,
+    "extends": [
+      "@ianwalter"
+    ]
+  },
+  "renovate": {
     "extends": [
       "@ianwalter"
     ]
