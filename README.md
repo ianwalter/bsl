@@ -3,10 +3,6 @@
 
 [![npm page][npmImage]][npmUrl]
 
-## Archived
-
-This functionality has been rolled into [bff-webdriver](https://github.com/ianwalter/bff-webdriver).
-
 ## Installation
 
 ```console
