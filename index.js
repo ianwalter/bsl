@@ -1,12 +1,13 @@
 require('dotenv').config()
 
 const { homedir } = require('os')
-const { join } = require('path')
+const { join, dirname } = require('path')
 const execa = require('execa')
 const Conf = require('conf')
 const fkill = require('fkill')
 const fs = require('@ianwalter/fs')
 const { print } = require('@ianwalter/print')
+const makeDir = require('make-dir')
 
 const config = new Conf({ projectName: 'bsl' })
 const defaultOptions = { force: true, forceLocal: true }
@@ -25,17 +26,28 @@ async function stop () {
   return fkill(config.get('pid'))
 }
 
-async function move () {
+async function checkIfGlobalBinaryExists () {
   const target = join(homedir(), '.browserstack/BrowserStackLocal')
-  const binaryExists = await fs.access(target)
-  if (binaryExists) {
+  let exists = true
+  try {
+    await fs.access(target)
+  } catch (err) {
+    exists = false
+  }
+  return { target, exists }
+}
+
+async function move () {
+  const { target, exists } = await checkIfGlobalBinaryExists()
+  if (exists) {
     print.error(`BrowserStackLocal binary already exists at ${target}`)
     process.exit(1)
   } else {
-    await fs.move('./BrowserStackLocal', target)
+    await makeDir(dirname(target))
+    await fs.rename('./BrowserStackLocal', target)
     await fs.symlink(target, './BrowserStackLocal')
     print.success(`BrowserStackLocal binary moved to ${target}`)
   }
 }
 
-module.exports = { start, stop, move }
+module.exports = { start, stop, move, checkIfGlobalBinaryExists }
