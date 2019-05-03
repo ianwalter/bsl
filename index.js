@@ -1,6 +1,7 @@
 require('dotenv').config()
 
-const { resolve } = require('path')
+const { homedir } = require('os')
+const { join } = require('path')
 const execa = require('execa')
 const Conf = require('conf')
 const fkill = require('fkill')
@@ -24,22 +25,17 @@ async function stop () {
   return fkill(config.get('pid'))
 }
 
-async function symlink () {
-  const destination = resolve('~/.browserstack/BrowserStackLocal')
-  await fs.symlink('./BrowserStackLocal', destination)
-}
-
 async function move () {
-  const destination = resolve('~/.browserstack/BrowserStackLocal')
-  const binaryExists = await fs.access(destination)
+  const target = join(homedir(), '.browserstack/BrowserStackLocal')
+  const binaryExists = await fs.access(target)
   if (binaryExists) {
-    print.error(`BrowserStackLocal binary already exists at ${destination}`)
+    print.error(`BrowserStackLocal binary already exists at ${target}`)
     process.exit(1)
   } else {
-    await fs.move('./BrowserStackLocal', destination)
-    await symlink()
-    print.success(`BrowserStackLocal binary moved to ${destination}`)
+    await fs.move('./BrowserStackLocal', target)
+    await fs.symlink(target, './BrowserStackLocal')
+    print.success(`BrowserStackLocal binary moved to ${target}`)
   }
 }
 
-module.exports = { start, stop, symlink, move }
+module.exports = { start, stop, move }

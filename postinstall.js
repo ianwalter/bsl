@@ -1,13 +1,22 @@
 #!/usr/bin/env node
 
+const { homedir } = require('os')
+const { join } = require('path')
 const download = require('download')
 const fs = require('@ianwalter/fs')
-const { symlink } = require('.')
 
 async function run () {
-  const binaryExists = await fs.access('~/.browserstack/BrowserStackLocal')
-  if (binaryExists) {
-    await symlink()
+  const target = join(homedir(), '.browserstack/BrowserStackLocal')
+
+  let exists = true
+  try {
+    await fs.access(target)
+  } catch (err) {
+    exists = false
+  }
+
+  if (exists) {
+    await fs.symlink(target, './BrowserStackLocal')
   } else {
     let url = 'https://s3.amazonaws.com/bstack-local-prod/BrowserStackLocal-darwin-x64'
     if (process.platform === 'linux') {
