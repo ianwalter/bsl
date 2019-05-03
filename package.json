@@ -60,7 +60,11 @@
       "browserstackLocal": false,
       "capabilities": {
         "browserName": "firefox",
-        "browserstack.local": true
+        "bstack:options": {
+          "local": true,
+          "projectName": "bsl",
+          "timezone": "New_York"
+        }
       }
     }
   },

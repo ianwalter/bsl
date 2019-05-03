@@ -17,12 +17,12 @@ const toFlags = (acc, [key, value]) => (
   value === true ? acc.concat([`--${key}`]) : acc.concat([`--${key}`, value])
 )
 
-async function start (options) {
+async function start (options = { daemon: 'start' }) {
   const flags = Object.entries(Object.assign(defaultOptions, options))
   return execa(binary, flags.reduce(toFlags, []))
 }
 
-async function stop (options) {
+async function stop (options = { daemon: 'stop' }) {
   return execa(binary, Object.entries(options).reduce(toFlags, []))
 }
 
