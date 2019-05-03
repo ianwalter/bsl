@@ -1,7 +1,7 @@
 {
   "name": "@ianwalter/bsl",
   "description": "A module and CLI that makes using BrowserStack Local easy",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
