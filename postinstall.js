@@ -1,15 +1,18 @@
 #!/usr/bin/env node
 
+const { join } = require('path')
 const download = require('download')
 const fs = require('@ianwalter/fs')
 const { checkIfGlobalBinaryExists } = require('.')
 const { print, chalk } = require('@ianwalter/print')
 const { oneLine } = require('common-tags')
 
+const binary = join(__dirname, 'BrowserStackLocal')
+
 async function run () {
   const { target, exists } = await checkIfGlobalBinaryExists()
   if (exists) {
-    await fs.symlink(target, './BrowserStackLocal')
+    await fs.symlink(target, binary)
     print.success(`Using global binary at ${target}`)
   } else {
     let url = 'https://s3.amazonaws.com/bstack-local-prod/BrowserStackLocal-darwin-x64'
@@ -19,7 +22,7 @@ async function run () {
       url = 'https://s3.amazonaws.com/bstack-local-prod/BrowserStackLocal.exe'
     }
     await download(url, __dirname, { filename: 'BrowserStackLocal' })
-    await fs.chmod('./BrowserStackLocal', 755)
+    await fs.chmod(binary, 755)
     print.success(
       `Downloaded BrowserStackLocal binary for ${process.platform}.`, '\n',
       oneLine`
