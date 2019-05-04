@@ -13,7 +13,7 @@ async function run () {
   const { target, exists } = await checkIfGlobalBinaryExists()
   if (exists) {
     await fs.symlink(target, binary)
-    print.success(`Using global binary at ${target}`)
+    print.success('Using global binary at', target)
   } else {
     let localBinaryDoesNotExist = false
     try {
