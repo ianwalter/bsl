@@ -20,5 +20,8 @@ action "Test" {
   needs = ["Install"]
   runs = "yarn"
   args = "test"
-  secrets = ["BROWSERSTACK_ACCESS_KEY"]
+  secrets = [
+    "BROWSERSTACK_ACCESS_KEY",
+    "BROWSERSTACK_USERNAME",
+  ]
 }
