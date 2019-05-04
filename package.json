@@ -53,6 +53,7 @@
   },
   "bff": {
     "plugins": [
+      "./config.js",
       "@ianwalter/bff-webdriver"
     ],
     "webdriver": {

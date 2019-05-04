@@ -1,6 +1,5 @@
 const { test } = require('@ianwalter/bff')
 const createTestServer = require('@ianwalter/test-server')
-const { start, stop } = require('.')
 
 test('tunneling localhost', async ({ browser, expect }) => {
   const server = await createTestServer()
@@ -16,8 +15,6 @@ test('tunneling localhost', async ({ browser, expect }) => {
       </html>
     `
   })
-  await start()
   await browser.url(server.url)
   expect(await browser.getTitle()).toBe('Hello World!')
-  await stop()
 })
