@@ -2,7 +2,7 @@
 
 const cli = require('@ianwalter/cli')
 const { print } = require('@ianwalter/print')
-const { start, stop, move } = require('.')
+const { start, stop, move, install } = require('.')
 
 async function run () {
   const config = await cli({ name: 'bsl' })
@@ -18,6 +18,8 @@ async function run () {
       print.success('BrowserStack Local stopped')
     } else if (command === 'move') {
       await move()
+    } else if (command === 'install') {
+      await install()
     } else {
       print.error('Unknown command:', command)
       process.exit(1)
