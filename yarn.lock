@@ -126,10 +126,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@ianwalter/bff-webdriver@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff-webdriver/-/bff-webdriver-3.0.0.tgz#d2ece7f3114e2dd8aec13697501aebcf195f8b14"
-  integrity sha512-O5HL6FKAYwSjfmW17EVpe3Sk2hij8tdkAiHYH4oDJ2GmM+G217u1h8AAnTVg6h6CLKjh3/kIGHxu26uoDg9ZPA==
+"@ianwalter/bff-webdriver@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff-webdriver/-/bff-webdriver-3.0.1.tgz#fd88a3a0c92659b3f7b4b976ab78cb233382f252"
+  integrity sha512-5Yu0IH85k2GzsQONV8z2nwOv1OsNysmq4+W+7SK7ZsBiDgJUC4VVLDJi+3S5Zi/OiNbO3jziBAzOHpgfquS4Ag==
   dependencies:
     "@ianwalter/bsl" "^2.0.0"
     "@ianwalter/cli" "^1.1.1"
@@ -137,6 +137,7 @@
     dotenv "^7.0.0"
     execa "^1.0.0"
     got "^9.6.0"
+    p-settle "^3.1.0"
     selenium-standalone "^6.16.0"
     webdriverio "^5.7.14"
 
@@ -3693,7 +3694,7 @@ p-limit@^1.1.0:
   dependencies:
     p-try "^1.0.0"
 
-p-limit@^2.0.0:
+p-limit@^2.0.0, p-limit@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-2.2.0.tgz#417c9941e6027a9abcba5092dd2904e255b5fbc2"
   integrity sha512-pZbTJpoUsCzV48Mc9Nh51VbwO0X9cuPFE8gYwx9BTCt9SF8/b7Zljd2fVgOxhIF/HDTKgpVzs+GPhyKfjLLFRQ==
@@ -3732,6 +3733,11 @@ p-reduce@^2.1.0:
   resolved "https://registry.yarnpkg.com/p-reduce/-/p-reduce-2.1.0.tgz#09408da49507c6c274faa31f28df334bc712b64a"
   integrity sha512-2USApvnsutq8uoxZBGbbWM0JIYLiEMJ9RlaN7fAzVNb9OZN0SHjjTTfIcb667XynS5Y1VhwDJVDa72TnPzAYWw==
 
+p-reflect@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/p-reflect/-/p-reflect-2.1.0.tgz#5d67c7b3c577c4e780b9451fc9129675bd99fe67"
+  integrity sha512-paHV8NUz8zDHu5lhr/ngGWQiW067DK/+IbJ+RfZ4k+s8y4EKyYCz8pGYWjxCg35eHztpJAt+NUgvN4L+GCbPlg==
+
 p-series@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/p-series/-/p-series-2.1.0.tgz#7035b3a81e2644d4ba407c1ebbc21776e353fa29"
@@ -3739,6 +3745,14 @@ p-series@^2.1.0:
   dependencies:
     "@sindresorhus/is" "^0.15.0"
     p-reduce "^2.1.0"
+
+p-settle@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/p-settle/-/p-settle-3.1.0.tgz#6194f4f929364a8843be54ced118389b7b9ee017"
+  integrity sha512-gkN3UDlyofG81IRhxLnonSIi8BBrwcPlKMJS6tcJRubofyekqQPMdB5LXPrmCkeu/m/YKx5PzkUVQLezda5/JQ==
+  dependencies:
+    p-limit "^2.2.0"
+    p-reflect "^2.0.0"
 
 p-timeout@^2.0.1:
   version "2.0.1"
