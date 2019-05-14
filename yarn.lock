@@ -126,10 +126,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@ianwalter/bff-webdriver@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff-webdriver/-/bff-webdriver-3.0.1.tgz#fd88a3a0c92659b3f7b4b976ab78cb233382f252"
-  integrity sha512-5Yu0IH85k2GzsQONV8z2nwOv1OsNysmq4+W+7SK7ZsBiDgJUC4VVLDJi+3S5Zi/OiNbO3jziBAzOHpgfquS4Ag==
+"@ianwalter/bff-webdriver@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff-webdriver/-/bff-webdriver-3.0.2.tgz#f44ab4bb0c5cd5047d617b39cf3186006bc86728"
+  integrity sha512-qvNsyMWiQIolVoKW5fpolKxq/ltTq3jkBNILjmM5sWP1Lh7PhFw37+oGtgjbXlza9R9C+QUVMHEZxR7m7lTe6w==
   dependencies:
     "@ianwalter/bsl" "^2.0.0"
     "@ianwalter/cli" "^1.1.1"
