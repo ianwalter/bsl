@@ -4,21 +4,21 @@ workflow "CI" {
 }
 
 action "Install" {
-  uses = "docker://node:12"
+  uses = "./"
   runs = "yarn"
 }
 
 action "Lint" {
-  uses = "docker://node:12"
+  uses = "./"
   needs = ["Install"]
   runs = "yarn"
   args = "lint"
 }
 
 action "Test" {
-  uses = "docker://node:12"
+  uses = "./"
   needs = ["Install"]
-  args = ["/bin/bash", "-c", "set -e && yarn test"]
+  args = "yarn test"
   secrets = [
     "BROWSERSTACK_ACCESS_KEY",
     "BROWSERSTACK_USERNAME",
