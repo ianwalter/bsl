@@ -1,10 +1,13 @@
+const { print } = require('@ianwalter/print')
 const { start, stop } = require('.')
 
 module.exports = {
   async before () {
-    return start()
+    const { stdout } = await start()
+    print.debug(stdout)
   },
   async after () {
-    return stop()
+    const { stdout } = await stop()
+    print.debug(stdout)
   }
 }
