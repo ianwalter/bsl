@@ -29,7 +29,9 @@ async function stop (options = { daemon: 'stop' }) {
 }
 
 async function checkIfGlobalBinaryExists () {
-  const target = join(homedir(), '.browserstack/BrowserStackLocal')
+  const defaultTarget = join(homedir(), '.browserstack/BrowserStackLocal')
+  const target = process.env.BROWSERSTACK_LOCAL_PATH || defaultTarget
+
   let exists = true
   try {
     await fs.access(target)
