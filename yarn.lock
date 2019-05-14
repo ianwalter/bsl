@@ -201,11 +201,6 @@
   dependencies:
     "@ianwalter/subpub" "^2.0.0"
 
-"@ianwalter/log@^2.0.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/log/-/log-2.1.0.tgz#64b2e141005c7cb6590346d6f9d4245e39fb52c7"
-  integrity sha512-CNU/r04SsX1UCvpSkq4LLzW/IzADHj9VubjbO2kVQ32Q6VBme3a5cRcTxgtV3MPCYEnm9m1lUGBOJ1gLMHIi2A==
-
 "@ianwalter/log@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/log/-/log-3.0.0.tgz#c85f7343e28e98d0a4c872a42e6bdd6d8b302e8d"
@@ -251,13 +246,14 @@
     "@babel/runtime" "^7.3.1"
     patrun "^1.0.0"
 
-"@ianwalter/test-server@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/test-server/-/test-server-1.3.0.tgz#15e8c12ed8da93f96e97e058c6e99372597b4c71"
-  integrity sha512-K8uCglquZgG9bltAnX5LRIODLQuJlue9qCJwqKjLmJdOGuvKMqfc8EBdi75bhq9T/yFHF6ivMerrKmW439suFQ==
+"@ianwalter/test-server@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@ianwalter/test-server/-/test-server-1.4.2.tgz#e98d151645576e8ddd7c4e92368bd58afa89c149"
+  integrity sha512-ocURZiPrfB8QFb7NYTFFEPA2112eRvIgAnWaqMQdZ4UCe9xJKPu8SZhAlUTv1atbW5oQGYqLTppguuJQRGoJBA==
   dependencies:
-    "@ianwalter/log" "^2.0.0"
+    "@ianwalter/print" "^2.3.0"
     koa "^2.7.0"
+    koa-bodyparser "^4.2.1"
     koa-json "^2.0.2"
     server-destroy "^1.0.1"
 
@@ -721,6 +717,11 @@ builtins@^1.0.3:
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha1-y5T662HIaWRR2zZTThQi+U8K7og=
 
+bytes@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
+  integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
+
 cache-base@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cache-base/-/cache-base-1.0.1.tgz#0a7f46416831c8b662ee36fe4e7c59d76f666ab2"
@@ -924,6 +925,16 @@ clone-response@1.0.2, clone-response@^1.0.2:
   dependencies:
     mimic-response "^1.0.0"
 
+co-body@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/co-body/-/co-body-6.0.0.tgz#965b9337d7f5655480787471f4237664820827e3"
+  integrity sha512-9ZIcixguuuKIptnY8yemEOuhb71L/lLf+Rl5JfJEUiDNJk0e02MBt7BPxR2GEh5mw8dPthQYR4jPI/BnS1MQgw==
+  dependencies:
+    inflation "^2.0.0"
+    qs "^6.5.2"
+    raw-body "^2.3.3"
+    type-is "^1.6.16"
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -1044,6 +1055,11 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
+
+copy-to@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/copy-to/-/copy-to-2.0.1.tgz#2680fbb8068a48d08656b6098092bdafc906f4a5"
+  integrity sha1-JoD7uAaKSNCGVrYJgJK9r8kG9KU=
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -2313,7 +2329,7 @@ http-cache-semantics@^4.0.0:
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.0.3.tgz#495704773277eeef6e43f9ab2c2c7d259dda25c5"
   integrity sha512-TcIMG3qeVLgDr1TEd2XvHaTnMPwYQUQMIBLy+5pLSDKYFc7UIqj39w8EGzZkaxoLv/l2K8HaI0t5AVA+YYgUew==
 
-http-errors@^1.6.3, http-errors@~1.7.1:
+http-errors@1.7.2, http-errors@^1.6.3, http-errors@~1.7.1:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.7.2.tgz#4f5029cf13239f31036e5b2e55292bcfbcc85c8f"
   integrity sha512-uUQBt3H/cSIVfch6i1EuPNy/YsRSOUBXTVfZ+yR7Zjez3qjBz6i9+i4zjNaoqcoFVI4lQJ5plg63TvGfRSDCRg==
@@ -2333,7 +2349,7 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-iconv-lite@^0.4.17, iconv-lite@^0.4.24:
+iconv-lite@0.4.24, iconv-lite@^0.4.17, iconv-lite@^0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
@@ -2385,6 +2401,11 @@ indent-string@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-3.2.0.tgz#4a5fd6d27cc332f37e5419a504dbb837105c9289"
   integrity sha1-Sl/W0nzDMvN+VBmlBNu4NxBckok=
+
+inflation@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/inflation/-/inflation-2.0.0.tgz#8b417e47c28f925a45133d914ca1fd389107f30f"
+  integrity sha1-i0F+R8KPklpFEz2RTKH9OJEH8w8=
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -2955,6 +2976,14 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
+
+koa-bodyparser@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/koa-bodyparser/-/koa-bodyparser-4.2.1.tgz#4d7dacb5e6db1106649b595d9e5ccb158b6f3b29"
+  integrity sha512-UIjPAlMZfNYDDe+4zBaOAUKYqkwAGcIU6r2ARf1UOXPAlfennQys5IiShaVeNf7KkVBlf88f2LeLvBFvKylttw==
+  dependencies:
+    co-body "^6.0.0"
+    copy-to "^2.0.1"
 
 koa-compose@^3.0.0:
   version "3.2.1"
@@ -4004,6 +4033,11 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
+qs@^6.5.2:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
+  integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
+
 qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
@@ -4022,6 +4056,16 @@ quick-lru@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-1.1.0.tgz#4360b17c61136ad38078397ff11416e186dcfbb8"
   integrity sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=
+
+raw-body@^2.3.3:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.4.0.tgz#a1ce6fb9c9bc356ca52e89256ab59059e13d0332"
+  integrity sha512-4Oz8DUIwdvoa5qMJelxipzi/iJIi40O5cGV1wNYp5hvZP8ZN0T+jiNkL0QepXs+EsQ9XJ8ipEDoiH70ySUJP3Q==
+  dependencies:
+    bytes "3.1.0"
+    http-errors "1.7.2"
+    iconv-lite "0.4.24"
+    unpipe "1.0.0"
 
 rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
   version "1.2.8"
@@ -4951,6 +4995,11 @@ unique-string@^1.0.0:
   integrity sha1-nhBXzKhRq7kzmPizOuGHuZyuwRo=
   dependencies:
     crypto-random-string "^1.0.0"
+
+unpipe@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
+  integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
 
 unset-value@^1.0.0:
   version "1.0.0"
