@@ -1,6 +1,6 @@
 FROM node:12
 
-LABEL "com.github.actions.name"="BSL"
+LABEL "com.github.actions.name"="BrowserStack Local Container"
 LABEL "com.github.actions.description"="Run BrowserStack Local easily"
 LABEL "com.github.actions.icon"="globe"
 LABEL "com.github.actions.color"="blue"
