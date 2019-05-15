@@ -9,6 +9,18 @@
 yarn add @ianwalter/bsl --dev
 ```
 
+## Usage
+
+As a [GitHub Action][actionsUrl]:
+
+```hcl
+action "Test" {
+  uses = "ianwalter/bsl@v2.0.1"
+  needs = ["Install"]
+  args = "yarn test"
+}
+```
+
 ## Related
 
 * [`@ianwalter/bff-webdriver`][bffWebdriverUrl] - A [bff][bffUrl] plugin to
@@ -25,6 +37,7 @@ Created by [Ian Walter](https://iankwalter.com)
 [bsUrl]: https://www.browserstack.com/local-testing
 [npmImage]: https://img.shields.io/npm/v/@ianwalter/bsl.svg
 [npmUrl]: https://www.npmjs.com/package/@ianwalter/bsl
+[actionsUrl]: https://github.com/features/actions
 [bffWebdriverUrl]: http://github.com/ianwalter/bff-webdriver
 [bffUrl]: http://github.com/ianwalter/bff
 [licenseUrl]: https://github.com/ianwalter/bsl/blob/master/LICENSE
