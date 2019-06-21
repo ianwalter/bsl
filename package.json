@@ -44,7 +44,7 @@
     "make-dir": "^3.0.0"
   },
   "devDependencies": {
-    "@ianwalter/bff": "^5.2.1",
+    "@ianwalter/bff": "^6.2.0",
     "@ianwalter/bff-webdriver": "^4.0.1",
     "@ianwalter/eslint-config": "^2.0.1",
     "@ianwalter/renovate-config": "^1.1.0",
