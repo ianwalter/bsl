@@ -141,13 +141,13 @@
     selenium-standalone "^6.16.0"
     webdriverio "^5.10.7"
 
-"@ianwalter/bff@^6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-6.2.0.tgz#502cc2c6808d349e76464ef2b68b6b892a8f1e84"
-  integrity sha512-BYVUrx2sqy3fxw+3P3ad4kXEFQBOktKF6VUneAMXHBhqfyxppPMWPZDCGRCfa6aSftN8uTDqWtES2KfDNcMx+Q==
+"@ianwalter/bff@^6.3.1":
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-6.3.1.tgz#7f426ab5b93b5d28bb7d72ea91a482b638fa7ea2"
+  integrity sha512-33OLydTrvMSS7rFwDOkCn2a3+FTckQLdR5WVM6KQQscU/q7UuBrN4bNTVlrlTWF4M+omzr0cvDkgKY5SVKa8Bg==
   dependencies:
     "@ianwalter/cli" "^1.1.1"
-    "@ianwalter/print" "^3.0.0"
+    "@ianwalter/print" "^3.0.1"
     common-tags "^1.8.0"
     expect "^24.8.0"
     globby "^9.2.0"
@@ -232,6 +232,17 @@
     "@ianwalter/log" "^3.0.0"
     chalk "^2.4.2"
     chromafi "^2.1.0"
+    has-ansi "^3.0.0"
+    has-emoji "^1.0.0"
+
+"@ianwalter/print@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.0.1.tgz#73d81f83fcb6366331704985e0c7ebe8c914a812"
+  integrity sha512-g2QKEUaOuhKR2WdY0nPXbBPA1KifKAH/9u47JdIIizkJQB+Mq1Pd6yLRKiaEQWQCUiPag3gIch+2YHVC4M1nPQ==
+  dependencies:
+    "@ianwalter/log" "^3.0.0"
+    chalk "^2.4.2"
+    chromafi ianwalter/chromafi
     has-ansi "^3.0.0"
     has-emoji "^1.0.0"
 
@@ -944,6 +955,26 @@ chromafi@^2.1.0:
     he "^1.1.1"
     highlight.js "^9.12.0"
     husky "^0.14.3"
+    min-indent "^1.0.0"
+    strip-ansi "^4.0.0"
+    strip-indent "^2.0.0"
+    super-split "^1.1.0"
+
+chromafi@ianwalter/chromafi:
+  version "2.1.0"
+  uid "5fc4e4335f56501152bfa339f7e7c1f2c785959c"
+  resolved "https://codeload.github.com/ianwalter/chromafi/tar.gz/5fc4e4335f56501152bfa339f7e7c1f2c785959c"
+  dependencies:
+    ansi-mark "^1.0.0"
+    ansi-regex "^3.0.0"
+    array-uniq "^1.0.3"
+    camelcase "^4.1.0"
+    chalk "^2.3.2"
+    cheerio "^1.0.0-rc.2"
+    deepmerge "^2.1.0"
+    detect-indent "^5.0.0"
+    he "^1.1.1"
+    highlight.js "^9.12.0"
     min-indent "^1.0.0"
     strip-ansi "^4.0.0"
     strip-indent "^2.0.0"
