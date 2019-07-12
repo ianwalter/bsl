@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/ianwalter/bsl#readme",
   "dependencies": {
-    "@ianwalter/cli": "^1.1.1",
+    "@ianwalter/cli": "^1.2.0",
     "@ianwalter/fs": "^1.1.0",
     "@ianwalter/print": "^3.0.1",
     "common-tags": "^1.8.0",
