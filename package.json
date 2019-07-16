@@ -47,9 +47,9 @@
     "@ianwalter/bff": "^6.4.0",
     "@ianwalter/bff-webdriver": "^5.1.1",
     "@ianwalter/eslint-config": "^2.1.1",
+    "@ianwalter/release": "^1.1.7",
     "@ianwalter/renovate-config": "^1.1.1",
-    "@ianwalter/test-server": "^1.4.3",
-    "np": "^5.0.3"
+    "@ianwalter/test-server": "^1.4.3"
   },
   "bff": {
     "plugins": [
