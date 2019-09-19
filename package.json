@@ -49,7 +49,7 @@
     "@ianwalter/eslint-config": "^3.0.0",
     "@ianwalter/release": "^3.0.5",
     "@ianwalter/renovate-config": "^1.2.0",
-    "@ianwalter/test-server": "^1.4.3"
+    "@ianwalter/test-server": "^2.0.2"
   },
   "bff": {
     "plugins": [
