@@ -184,17 +184,6 @@
     has-ansi "^3.0.0"
     has-emoji "^1.0.0"
 
-"@ianwalter/print@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.0.1.tgz#73d81f83fcb6366331704985e0c7ebe8c914a812"
-  integrity sha512-g2QKEUaOuhKR2WdY0nPXbBPA1KifKAH/9u47JdIIizkJQB+Mq1Pd6yLRKiaEQWQCUiPag3gIch+2YHVC4M1nPQ==
-  dependencies:
-    "@ianwalter/log" "^3.0.0"
-    chalk "^2.4.2"
-    chromafi ianwalter/chromafi
-    has-ansi "^3.0.0"
-    has-emoji "^1.0.0"
-
 "@ianwalter/print@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.1.0.tgz#8195e77a55eddab0815a2865858e27de9e6d7c3f"
