@@ -1,8 +1,8 @@
 const { test } = require('@ianwalter/bff')
-const createTestServer = require('@ianwalter/test-server')
+const { createKoaServer } = require('@ianwalter/test-server')
 
 test('tunneling localhost', async ({ browser, expect }) => {
-  const server = await createTestServer()
+  const server = await createKoaServer()
   server.use(ctx => {
     ctx.body = `
       <html>
