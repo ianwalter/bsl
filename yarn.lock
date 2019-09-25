@@ -49,13 +49,13 @@
     selenium-standalone "^6.16.0"
     webdriverio "^5.11.13"
 
-"@ianwalter/bff@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-6.5.0.tgz#12445901a0926fdd2bc50a760e52873d49bd7647"
-  integrity sha512-9a8V/RhtPfISh7Oo+B9Mq2OO+6Upo0bzarH8NphiCcCkpfuG3MdCy/4t7pMV/HrgiHgM9Uqd8Km4YuilNPQDlw==
+"@ianwalter/bff@^6.5.2":
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-6.5.2.tgz#0f0cda2492725789e47e10a49f5e07d7b12b8740"
+  integrity sha512-48LHPeqRWNsc0UBh8pMMqvbWWlM2J8OCbAh80/cJO610aar0qK3EZD5Zd0Hh4bAQ+iv5AqeclZK3n+x3aAtv4g==
   dependencies:
     "@ianwalter/cli" "^1.2.0"
-    "@ianwalter/print" "^3.2.0"
+    "@ianwalter/print" "^3.4.0"
     "@ianwalter/timer" "^1.1.0"
     common-tags "^1.8.0"
     expect "^24.9.0"
@@ -200,20 +200,6 @@
     chromafi ianwalter/chromafi
     has-ansi "^3.0.0"
     has-emoji "^1.1.0"
-
-"@ianwalter/print@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.2.0.tgz#f808027992a1565ce6c2c9b222134bef5ffa67ed"
-  integrity sha512-5UI7jiicO9IuTogyt35NQhAb2DV1EYD9V0bWfkZTStnMWQ1KDTdUWjeLI18ABdafeF1K8MGbjg+f0Z83irgJEg==
-  dependencies:
-    "@ianwalter/clone" "^4.1.0"
-    "@ianwalter/log" "^3.0.0"
-    chalk "^2.4.2"
-    chromafi ianwalter/chromafi
-    has-ansi "^3.0.0"
-    has-emoji "^1.1.0"
-    marked "^0.7.0"
-    marked-terminal "^3.3.0"
 
 "@ianwalter/print@^3.3.1":
   version "3.3.1"
