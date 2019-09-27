@@ -243,6 +243,20 @@
     marked "^0.7.0"
     marked-terminal "^3.3.0"
 
+"@ianwalter/print@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.5.0.tgz#13a594f29330b0be28e27355b7c707a01251d93f"
+  integrity sha512-5NYDzTSPeNMzY5OljmyF2w6NDw8A8MWUfGvkiS/e/mZIKaS61AhRqMb3/gLreb/UyqonsdMqzI0lYMmZThfSyA==
+  dependencies:
+    "@ianwalter/chromafi" "^1.0.1"
+    "@ianwalter/clone" "^4.1.0"
+    "@ianwalter/log" "^3.1.0"
+    chalk "^2.4.2"
+    has-ansi "^4.0.0"
+    has-emoji "^1.1.0"
+    marked "^0.7.0"
+    marked-terminal "^3.3.0"
+
 "@ianwalter/release@^3.0.5":
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@ianwalter/release/-/release-3.0.5.tgz#7827583766e3d5cf7e6e8c93280a7695029c203e"
