@@ -1,5 +1,8 @@
 name: CI
-on: [push, pull_request]
+# Commenting out pull_request event since BrowserStack doesn't seem to want to
+# let me open 2 tunnels at the same time.
+# on: [push, pull_request]
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
