@@ -36,7 +36,7 @@
   "dependencies": {
     "@ianwalter/cli": "^1.2.0",
     "@ianwalter/fs": "^1.1.0",
-    "@ianwalter/print": "^3.6.0",
+    "@ianwalter/print": "^3.9.0",
     "common-tags": "^1.8.0",
     "dotenv": "^8.1.0",
     "download": "^7.1.0",
