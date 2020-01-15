@@ -38,7 +38,7 @@
     "@ianwalter/fs": "^1.1.0",
     "@ianwalter/print": "^3.6.0",
     "common-tags": "^1.8.0",
-    "dotenv": "^8.1.0",
+    "dotenv": "^8.2.0",
     "download": "^7.1.0",
     "execa": "^4.0.0",
     "make-dir": "^3.0.0"
