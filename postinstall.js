@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 const { join } = require('path')
-
-const fs = require('@ianwalter/fs')
+const { promises: fs } = require('fs')
 const { checkIfGlobalBinaryExists, install } = require('.')
 const { print } = require('@ianwalter/print')
 
