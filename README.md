@@ -13,12 +13,14 @@ yarn add @ianwalter/bsl --dev
 
 As a [GitHub Action][actionsUrl]:
 
-```hcl
-action "Test" {
-  uses = "ianwalter/bsl@v2.0.1"
-  needs = ["Install"]
-  args = "yarn test"
-}
+```yaml
+- name: Test
+  uses: ianwalter/bsl@v2.1.0
+  with:
+    args: yarn test
+  env:
+    BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+    BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
 ```
 
 ## Related
@@ -28,11 +30,11 @@ action "Test" {
 
 ## License
 
-Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
+Hippocratic License - See [LICENSE][licenseUrl]
 
 &nbsp;
 
-Created by [Ian Walter](https://iankwalter.com)
+Created by [Ian Walter](https://ianwalter.dev)
 
 [bsUrl]: https://www.browserstack.com/local-testing
 [npmImage]: https://img.shields.io/npm/v/@ianwalter/bsl.svg
