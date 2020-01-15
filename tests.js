@@ -1,9 +1,9 @@
 const { test } = require('@ianwalter/bff')
-const { createKoaServer } = require('@ianwalter/test-server')
+const { createApp } = require('@ianwalter/nrg')
 
 test('tunneling localhost', async ({ browser, expect }) => {
-  const server = await createKoaServer()
-  server.use(ctx => {
+  const app = await createApp().start()
+  app.use(ctx => {
     ctx.body = `
       <html>
         <head>
@@ -15,6 +15,7 @@ test('tunneling localhost', async ({ browser, expect }) => {
       </html>
     `
   })
-  await browser.url(server.url)
+  await browser.url(app.server.url)
   expect(await browser.getTitle()).toBe('Hello World!')
+  await app.server.close()
 })
