@@ -101,13 +101,14 @@
     selenium-standalone "^6.17.0"
     webdriverio "^5.18.5"
 
-"@ianwalter/bff@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-8.0.0.tgz#a9c56acdd174218f5cfdc784c054d1ea85bedca8"
-  integrity sha512-fWjR1AY8M+BNGfRi/LLTem7a1VVmibQcgwCgz1ET0AFywGfisne4KPczYl7McUKicHlwv1rYkS13QO8o+09OSw==
+"@ianwalter/bff@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-8.1.0.tgz#0136202194b004b6b22c8e1bdfb6246b145129e6"
+  integrity sha512-TWwnmsfhSZKkLf0DIBFJxdo1U/hRZVBV+0UILpf/pW2MP67C5EmwmTg4hM520YyCuQzT37XBFFNsT4hWlQ8khg==
   dependencies:
     "@ianwalter/cli" "^3.0.0"
     "@ianwalter/print" "^5.0.0"
+    "@ianwalter/subpub" "^2.0.0"
     "@ianwalter/timer" "^1.1.0"
     common-tags "^1.8.0"
     expect "^24.9.0"
