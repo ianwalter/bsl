@@ -33,7 +33,7 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.4.3":
+"@babel/runtime@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.3.tgz#0811944f73a6c926bb2ad35e918dcc1bfab279f1"
   integrity sha512-fVHx1rzEmwB130VTkLnxR+HmxcTjGzH12LYQcFFoBwakMd3aOMD4OsRN7tGG/UOYE2ektgFrS8uACAoRk1CY0w==
@@ -237,6 +237,16 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-5.0.0.tgz#972b3cd668ab87416fba1af99186cd83d34d687f"
   integrity sha512-Z+Xn8dT0ApkjGizdwMQaCgsAyHO+zKhCC2OYO7lEYLs1IdCzXtRUYah3vkIWT8/Ad94ni0rxtR39VTRWJE1/Qw==
 
+"@ianwalter/nrg-mq@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg-mq/-/nrg-mq-0.0.1.tgz#49a162ceab44338686b5528d608d259308d64da1"
+  integrity sha512-q7YOM9Ox13mKf1h0UIFGpQHyFxsCKkE0178y+HEJgmOaaEy4hmwF1SaQmuFOrix0/bFlEzJyyJMXCpCs4Dp3cQ==
+  dependencies:
+    "@ianwalter/clone" "^4.1.0"
+    "@ianwalter/print" "^5.0.0"
+    amqp-connection-manager "^3.1.1"
+    amqplib "^0.5.5"
+
 "@ianwalter/nrg-router@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@ianwalter/nrg-router/-/nrg-router-0.2.1.tgz#270159c4cf59c001af818bb43fd5cabca03328be"
@@ -256,20 +266,20 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.0.52":
-  version "0.0.52"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.52.tgz#31b9eecdccaae9b72e2f2c96c87d9cc9319c62da"
-  integrity sha512-xntwUbWf8Qvn2k55Ij1DpwH1qFGZ/xeyPBiRL1MOdP49B5cYKP85CDhPuk7HfKJgiaShipp/kQpLwLOzw/IOKw==
+"@ianwalter/nrg@^0.0.53":
+  version "0.0.53"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.53.tgz#f2077cf164f816880fc90221b84b90844d979c6a"
+  integrity sha512-YmGcuhJHad3EHBkIRFDA5TP/7zsmu/JHajOpCp7CuhCfbgB3W/eAjkL1VUmeqn6LQZsQWg/oJ2auJ/OMGeLVjQ==
   dependencies:
     "@ianwalter/cli" "^3.0.0"
     "@ianwalter/correct" "^0.1.2"
     "@ianwalter/merge" "^5.0.0"
+    "@ianwalter/nrg-mq" "^0.0.1"
     "@ianwalter/nrg-router" "^0.2.1"
     "@ianwalter/nrg-session" "^6.0.0"
     "@ianwalter/pino-print" "^3.0.0"
     "@ianwalter/print" "^5.0.0"
     "@ianwalter/url" "^1.1.0"
-    amqplib "^0.5.5"
     bcrypt "3.0.4-napi"
     date-fns "^2.9.0"
     devalue "^2.0.1"
@@ -283,10 +293,10 @@
     koa-compress "^3.0.0"
     koa-csrf "^3.0.8"
     koa-json "^2.0.2"
-    koa-pino-logger "github:jstewmon/koa-pino-logger#cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104"
-    koa-redis "^4.0.0"
+    koa-pino-logger jstewmon/koa-pino-logger#cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104
+    koa-redis "^4.0.1"
     koa-send "^5.0.0"
-    koa-webpack "github:ianwalter/koa-webpack"
+    koa-webpack ianwalter/koa-webpack
     mailgen "^2.0.10"
     nodemailer "^6.4.2"
     objection "^1.6.11"
@@ -883,6 +893,13 @@ ajv@^6.5.5, ajv@^6.9.1:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
+
+amqp-connection-manager@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/amqp-connection-manager/-/amqp-connection-manager-3.1.1.tgz#c2311bf9da6020033cc59de2968fd29a2f0f113c"
+  integrity sha512-CpGq79MTFU8ql3M1BQlzYIkEPbfKL9e7s5UU7ghXLH3gFYh3R5dX6hex02KA2Bi4xDMNCHe/1rxSLR6B67AyWQ==
+  dependencies:
+    promise-breaker "^5.0.0"
 
 amqplib@^0.5.5:
   version "0.5.5"
@@ -3941,7 +3958,7 @@ into-stream@^3.1.0:
     from2 "^2.1.1"
     p-is-promise "^1.1.0"
 
-ioredis@^4.9.0:
+ioredis@^4.14.1:
   version "4.14.1"
   resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.14.1.tgz#b73ded95fcf220f106d33125a92ef6213aa31318"
   integrity sha512-94W+X//GHM+1GJvDk6JPc+8qlM7Dul+9K+lg3/aHixPN7ZGkW6qlvX0DG6At9hWtH2v3B32myfZqWoANUJYGJA==
@@ -4538,22 +4555,22 @@ koa-json@^2.0.2:
     koa-is-json "1"
     streaming-json-stringify "3"
 
-"koa-pino-logger@github:jstewmon/koa-pino-logger#cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104":
+koa-pino-logger@jstewmon/koa-pino-logger#cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104:
   version "2.1.3"
   uid cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104
   resolved "https://codeload.github.com/jstewmon/koa-pino-logger/tar.gz/cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104"
   dependencies:
     pino-http "^4.1.0"
 
-koa-redis@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/koa-redis/-/koa-redis-4.0.0.tgz#565dc700190432989fb2096ca4341240a84698dd"
-  integrity sha512-Yh/jPO2UUaqkWI5L4MLmwBfeAAevMasBn31ePUFE6RXu2yktcsG3YzxswOSeC+c+c3j7vJjCA1JJuXPztLIg1w==
+koa-redis@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/koa-redis/-/koa-redis-4.0.1.tgz#57ac1b46d9ab851221a9f4952c1e8d4bf289db40"
+  integrity sha512-o2eTVNo1NBnloeUGhHed5Q2ZvJSLpUEj/+E1/7oH5EmH8WuQ+QLdl/VawkshxdFQ47W1p6V09lM3hCTu7D0YnQ==
   dependencies:
-    "@babel/runtime" "^7.4.3"
+    "@babel/runtime" "^7.8.3"
     co-wrap-all "^1.0.0"
     debug "^4.1.1"
-    ioredis "^4.9.0"
+    ioredis "^4.14.1"
 
 koa-send@^5.0.0:
   version "5.0.0"
@@ -4565,7 +4582,7 @@ koa-send@^5.0.0:
     mz "^2.7.0"
     resolve-path "^1.4.0"
 
-"koa-webpack@github:ianwalter/koa-webpack":
+koa-webpack@ianwalter/koa-webpack:
   version "5.2.4"
   uid "8318d1b90830e008aeac0991c6602b2817bd5ee7"
   resolved "https://codeload.github.com/ianwalter/koa-webpack/tar.gz/8318d1b90830e008aeac0991c6602b2817bd5ee7"
@@ -6142,6 +6159,11 @@ progress@2.0.3, progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
+
+promise-breaker@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/promise-breaker/-/promise-breaker-5.0.0.tgz#58e8541f1619554057da95a211794d7834d30c1d"
+  integrity sha512-mgsWQuG4kJ1dtO6e/QlNDLFtMkMzzecsC69aI5hlLEjGHFNpHrvGhFi4LiK5jg2SMQj74/diH+wZliL9LpGsyA==
 
 promise-inflight@^1.0.1:
   version "1.0.1"
