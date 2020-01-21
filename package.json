@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@ianwalter/bff": "^8.1.0",
-    "@ianwalter/bff-webdriver": "^5.5.0",
+    "@ianwalter/bff-webdriver": "^5.5.1",
     "@ianwalter/eslint-config": "^3.1.0",
     "@ianwalter/nrg": "^0.0.53",
     "@ianwalter/release": "^5.0.0",
