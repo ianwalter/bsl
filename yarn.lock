@@ -243,13 +243,13 @@
     amqp-connection-manager "^3.1.1"
     amqplib "^0.5.5"
 
-"@ianwalter/nrg-router@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg-router/-/nrg-router-0.2.2.tgz#fa3c211d8006dc5273b47e629a99043aef1b3815"
-  integrity sha512-VwvPiR9OTjWR6KV32z/fIk+rutE19UN7V84KPTv1Hg4m2rahf9TlXuZ0HwHY7XyW6xba8+3b6KJoQBqdJC8OBw==
+"@ianwalter/nrg-router@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg-router/-/nrg-router-0.2.4.tgz#51e74dda656d6f040a9a10ad6358b6614357b6ae"
+  integrity sha512-v/l7sl/4CnxCIeLUr4ZX9BSLwi6i05FGJ+fO1keliJqUU7ayPqt+zbTiT6qN/tXXa8M3qJGhZENRDNzlYybCgg==
   dependencies:
     "@ianwalter/print" "^5.0.0"
-    "@ianwalter/router" "^3.1.2"
+    "@ianwalter/router" "^3.1.4"
 
 "@ianwalter/nrg-session@^6.0.0":
   version "6.0.0"
@@ -262,16 +262,17 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.0.59":
-  version "0.0.59"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.59.tgz#d547e25ec92fcdcd2b5a217b3efd01c06b9a1942"
-  integrity sha512-+unbVLm+QGb5B/MNSg4KfgJSlL5iYhuz7ksL9zhbmaXeb+73vbIDnQWaawg55APmYbOvQ5/wNs/ovQqcEj8Xew==
+"@ianwalter/nrg@^0.0.61":
+  version "0.0.61"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.61.tgz#2b7c8572923f5778033c020fbf445f3a83e2a04a"
+  integrity sha512-lteuF4nIGJRQKgAs82uZL1fXLd/q7eDtMTOjAo/U8evNMDp8SEcUnT07q8OZutMD890QD5nxcINjQxVqyCLYbQ==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
+    "@ianwalter/clone" "^4.1.0"
     "@ianwalter/correct" "^0.1.2"
     "@ianwalter/merge" "^5.0.0"
     "@ianwalter/nrg-mq" "^0.0.1"
-    "@ianwalter/nrg-router" "^0.2.2"
+    "@ianwalter/nrg-router" "^0.2.4"
     "@ianwalter/nrg-session" "^6.0.0"
     "@ianwalter/pino-print" "^3.0.0"
     "@ianwalter/print" "^5.0.0"
@@ -282,7 +283,6 @@
     dot-prop "^5.2.0"
     dotenv "^8.2.0"
     ejs "^3.0.1"
-    indent-string "^4.0.0"
     knex "^0.20.8"
     koa "^2.11.0"
     koa-bodyparser "^4.2.1"
@@ -296,10 +296,9 @@
     mailgen "^2.0.10"
     nodemailer "^6.4.2"
     objection "^2.1.2"
-    pg "^7.18.0"
+    pg "^7.18.1"
     pino "^5.16.0"
     pkg-dir "^4.2.0"
-    prettydiff "^101.2.6"
     read-pkg-up "^7.0.1"
     require-from-string "^2.0.2"
     server-destroy "^1.0.1"
@@ -385,11 +384,12 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.2.0.tgz#f84e2fc56ad5d29c0876058c16c25db95baf74a9"
   integrity sha512-OSvziSdR0gxnWeH+9KbS9+HjojFa73vqNFU7wAxWs2ZV/9YofpKw0HwGtzyYgb1xVk8g6ZFPMYaTnFZ4Af6N/w==
 
-"@ianwalter/router@^3.1.2":
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/router/-/router-3.1.2.tgz#807cd03af6085cab2c15491289434eb6207387b1"
-  integrity sha512-X4MnatMRLmtToopaj1x1qpdjwkG0wfpL7eETmjFba8yIIujVakC7S8Vcpvn+MZ9aS4FcNdugiMaAT66pm7PdLA==
+"@ianwalter/router@^3.1.4":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@ianwalter/router/-/router-3.1.4.tgz#a32402fade36c07e1a71e043f579c0d22ec351d8"
+  integrity sha512-EI2PQTMPzaPYT8XdBgZV+nZvZH9RbXrE2Ros+eZUnV6v/VOhUwbsYvQqnPbwIqWn6HrEdhGukKO/3nbK4I2DrA==
   dependencies:
+    "@ianwalter/merge" "^5.0.0"
     koa-compose "^4.1.0"
 
 "@ianwalter/subpub@^2.0.0":
@@ -566,11 +566,6 @@
   version "11.13.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.5.tgz#266564afa8a6a09dc778dfacc703ed3f09c80516"
   integrity sha512-/OMMBnjVtDuwX1tg2pkYVSqRIDSmNTnvVvmvP/2xiMAAWf4a5+JozrApCrO4WCAILmXVxfNoQ3E+0HJbNpFVGg==
-
-"@types/node@^12.7.1", "@types/node@^12.7.2":
-  version "12.12.24"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.24.tgz#d4606afd8cf6c609036b854360367d1b2c78931f"
-  integrity sha512-1Ciqv9pqwVtW6FsIUKSZNB82E5Cu1I2bBTj1xuIHXLe/1zYLl3956Nbhg2MzSYHVfl9/rmanjbQIb7LibfCnug==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -3060,11 +3055,6 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-saver@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-2.0.2.tgz#06d6e728a9ea2df2cce2f8d9e84dfcdc338ec17a"
-  integrity sha512-Wz3c3XQ5xroCxd1G8b7yL0Ehkf0TC9oYC6buPFkNnU9EnaPlifeAFCyCh+iewXTyFRcg0a6j3J7FmJsIhlhBdw==
-
 file-type@^3.8.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/file-type/-/file-type-3.9.0.tgz#257a078384d1db8087bc449d107d52a52672b9e9"
@@ -3847,11 +3837,6 @@ imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
-
-indent-string@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-4.0.0.tgz#624f8f4497d619b2d9768531d58f4122854d7251"
-  integrity sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==
 
 infer-owner@^1.0.3:
   version "1.0.4"
@@ -5942,10 +5927,10 @@ pg-types@^2.1.0:
     postgres-date "~1.0.4"
     postgres-interval "^1.1.0"
 
-pg@^7.18.0:
-  version "7.18.0"
-  resolved "https://registry.yarnpkg.com/pg/-/pg-7.18.0.tgz#c5f3263bea629c9e7796860533130626f7c3afb8"
-  integrity sha512-i70+Si6SNNV5JxbCE7Xu6c1jUrOJ2/EojpiITRO235fd1Yl4PwZxvqsj1BHlfVjPcd/f17Q5JasU2Y9AoUt+dg==
+pg@^7.18.1:
+  version "7.18.1"
+  resolved "https://registry.yarnpkg.com/pg/-/pg-7.18.1.tgz#67f59c47a99456fcb34f9fe53662b79d4a992f6d"
+  integrity sha512-1KtKBKg/zWrjEEv//klBbVOPGucuc7HHeJf6OEMueVcUeyF3yueHf+DvhVwBjIAe9/97RAydO/lWjkcMwssuEw==
   dependencies:
     buffer-writer "2.0.0"
     packet-reader "1.0.0"
@@ -6092,15 +6077,6 @@ pretty-format@^24.9.0:
     ansi-regex "^4.0.0"
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
-
-prettydiff@^101.2.6:
-  version "101.2.6"
-  resolved "https://registry.yarnpkg.com/prettydiff/-/prettydiff-101.2.6.tgz#b6ffbb618f0ad55887c2c1b02a336ba31a83d243"
-  integrity sha512-/fJ33pQ8MPI7+IB8fo/lOMR58CE/4GYNZRtjcQiPYmGNMo1HS9KmaybYdtEnfmx5EOSe/ch3Sg2fJ8YkNKb/XQ==
-  dependencies:
-    "@types/node" "^12.7.2"
-    file-saver "^2.0.2"
-    sparser "^1.4.11"
 
 process-nextick-args@~2.0.0:
   version "2.0.0"
@@ -7008,13 +6984,6 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
-
-sparser@^1.4.11:
-  version "1.4.12"
-  resolved "https://registry.yarnpkg.com/sparser/-/sparser-1.4.12.tgz#d591f088c2658a57b138390110d71db0f0053cb0"
-  integrity sha512-qxDcacCuwHbvsf803PpZuETRI1pU8NAmLbyzZqFHPW7QjPK9pnCoX9ZPPbOMyiti6EOocfYzqzDPWj4fICXNzw==
-  dependencies:
-    "@types/node" "^12.7.1"
 
 spdx-correct@^3.0.0:
   version "3.1.0"
