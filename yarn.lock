@@ -262,10 +262,10 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.0.64":
-  version "0.0.64"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.64.tgz#4912b22967fadc3f80466068c9807eadff36a5ec"
-  integrity sha512-f1VrxkH9DmOmwaz+MKjfd2wLFvF5qzrC598HLVUaNrwJ/ZZP7L8rF7vaOG+sTKWYCyp4bzWrlXSL5B0HA07blQ==
+"@ianwalter/nrg@^0.0.65":
+  version "0.0.65"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.65.tgz#8b876681db983628d83f84bf98f311d2c13f5912"
+  integrity sha512-JqdGi+wBPg7t+V/wLRrZapVkO7w+rzFjXmgdDKZMvXj+h3kS5pUpEScFs8chCWfbMdcfxz8yo+vAkAjXQZQ1zg==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/clone" "^4.1.0"
@@ -274,7 +274,7 @@
     "@ianwalter/nrg-mq" "^0.0.1"
     "@ianwalter/nrg-router" "^0.2.4"
     "@ianwalter/nrg-session" "^6.0.0"
-    "@ianwalter/pino-print" "^3.0.0"
+    "@ianwalter/pino-print" "^3.1.0"
     "@ianwalter/print" "^5.0.0"
     "@ianwalter/url" "^1.1.0"
     bcrypt "3.0.4-napi"
@@ -294,6 +294,7 @@
     koa-send "^5.0.0"
     koa-webpack ianwalter/koa-webpack
     mailgen "^2.0.10"
+    nanoid "^2.1.11"
     nodemailer "^6.4.2"
     objection "^2.1.2"
     pg "^7.18.1"
@@ -305,10 +306,10 @@
     supertest "^4.0.2"
     webpack "^4.41.5"
 
-"@ianwalter/pino-print@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/pino-print/-/pino-print-3.0.0.tgz#5a897944c3ed1446e54f154557ae7c445cff413c"
-  integrity sha512-b/3CJ/mxswejbWhQta1LMaaeqR56zk5/oN2cWtSyKwF1AfgTqohUBzXN7P1l+gLqG77h6T7v4z3yq2kyenuGpg==
+"@ianwalter/pino-print@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/pino-print/-/pino-print-3.1.0.tgz#98fac7cc3ec1195f1d68bd57aa62749fdc411e07"
+  integrity sha512-QOal6D5omTzJ1Wj+DcXMptFPV14XSh5y0QLUxCwJi6tYDKSxOezaZvta3tpeakkHCnJGo652hqHP5jA9HzOByw==
   dependencies:
     "@ianwalter/cli" "^3.0.0"
     "@ianwalter/print" "^5.0.0"
@@ -5193,6 +5194,11 @@ nan@^2.12.1:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
   integrity sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
+
+nanoid@^2.1.11:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-2.1.11.tgz#ec24b8a758d591561531b4176a01e3ab4f0f0280"
+  integrity sha512-s/snB+WGm6uwi0WjsZdaVcuf3KJXlfGl2LcxgwkEwJF0D/BWzVWAZW/XY4bFaiR7s0Jk3FPvlnepg1H1b1UwlA==
 
 nanomatch@^1.2.9:
   version "1.2.13"
