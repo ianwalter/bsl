@@ -262,10 +262,10 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.0.62":
-  version "0.0.62"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.62.tgz#cce59ccbe42329a78f8eb3bbc54940093832a438"
-  integrity sha512-MnUaPj1bIFdBPKMFhEwYK/lAIZyy3bvVrgnUiuXmGn9mC4/6s5r/bP1eJKkcDMPvB/NVL1Xt1eMyXAMY1C6IOw==
+"@ianwalter/nrg@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.63.tgz#57705cbab6b6c68ffc472e4cdff7be18dcc3876f"
+  integrity sha512-lY2SlsIZ/H3qAzDD6eXWVCnqv60CpexvLmMU9Lc19DaBRZ2pWh1ym/+FVWU/1sUBNU5qatkQuEkIbV+cwi9oew==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/clone" "^4.1.0"
