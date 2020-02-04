@@ -192,15 +192,15 @@
     execa "^3.4.0"
     strip "^3.0.0"
 
-"@ianwalter/correct@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/correct/-/correct-0.1.2.tgz#31c662fc9c95c8153416a6403f1bcb5976c1cc2b"
-  integrity sha512-S/UZ9G3/hRs22NZOXNTmOWCnJiVYMXEpIXA1j1mUr770HWtbmxMSLeHF5nlUoDCh5IThI/AbFnmKXvm2YmysUQ==
+"@ianwalter/correct@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/correct/-/correct-1.0.0.tgz#b1c790739dc3298a427dd2207b7b1fa5589e20b0"
+  integrity sha512-lFN56oSiSXYdjK9StWpGS3fI84jtQ9cq28AzWothldbn7Dt0QMgL7i+u6yGUZ2rgieCHtldHlk7G18lUFwMM8g==
   dependencies:
     "@ianwalter/base-error" "^6.1.0"
-    "@ianwalter/print" "^4.0.2"
+    "@ianwalter/print" "^5.0.0"
     date-fns "^2.9.0"
-    decamelize "^3.2.0"
+    decamelize "^4.0.0"
     is-phone "^2.0.0"
     isemail "^3.2.0"
     zxcvbn "^4.4.2"
@@ -262,14 +262,14 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.0.67":
-  version "0.0.67"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.67.tgz#fbbf78db3fee9e26e5d9f1cc1305f2cf65774a6c"
-  integrity sha512-7x+AVQY89Jzay/kvptLXCwtUQMNeOHpsOWeb02Ox+Yk3hjq7pFkjs5afm/mXOAkk0iqCQ5TeKnFs7FgpnrNAXQ==
+"@ianwalter/nrg@^0.0.68":
+  version "0.0.68"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.68.tgz#051cba4c2daed3b3eff42d567feccefe54ed6295"
+  integrity sha512-BaKR9iZiWpVe6pm4Hvme86kUZiC4I1KO4k8sOlOaEHI3e4Jb5Oydhf+NUXPTA9GpU1idAJCJM8ZOzJryzWUPmw==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/clone" "^4.1.0"
-    "@ianwalter/correct" "^0.1.2"
+    "@ianwalter/correct" "^1.0.0"
     "@ianwalter/merge" "^5.0.0"
     "@ianwalter/nrg-mq" "^0.0.1"
     "@ianwalter/nrg-router" "^0.2.4"
@@ -331,7 +331,7 @@
     marked-terminal "^3.3.0"
     strip-ansi "^6.0.0"
 
-"@ianwalter/print@^4.0.0", "@ianwalter/print@^4.0.2":
+"@ianwalter/print@^4.0.0":
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-4.0.2.tgz#18bdb9cb3feb8222b845b8e964ae92621965774c"
   integrity sha512-rDVckxFKQ046LByTntFqoHUFdKglAaZiIpHShXfjuYOj6f4fT7Mg2A5OpI7y5K0nSq8Ag6QW9YAY7FuY0v0uXg==
@@ -2146,6 +2146,11 @@ decamelize@^3.2.0:
   integrity sha512-4TgkVUsmmu7oCSyGBm5FvfMoACuoh9EOidm7V5/J2X2djAwwt57qb3F2KMP2ITqODTCSwb+YRV+0Zqrv18k/hw==
   dependencies:
     xregexp "^4.2.4"
+
+decamelize@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-4.0.0.tgz#aa472d7bf660eb15f3494efd531cab7f2a709837"
+  integrity sha512-9iE1PgSik9HeIIw2JO94IidnE3eBoQrFJ3w7sFuzSX4DpmZ3v5sZpUiV5Swcf6mQEF+Y0ru8Neo+p+nyh2J+hQ==
 
 decode-uri-component@^0.2.0:
   version "0.2.0"
