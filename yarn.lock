@@ -182,6 +182,11 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-4.1.0.tgz#635860922699338da607b8e990ae5173e3e3e9c9"
   integrity sha512-UWlp3DtPvLgZkS3hy6ihHQATjQC1BtoJxk4PCO/v7r8m7P4g0WkdacadpUh0ze3yNqO+uFIRW2RX1boGz7feQQ==
 
+"@ianwalter/cloneable@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/cloneable/-/cloneable-1.0.0.tgz#a6ebcf3004dcf4a4ba5970005cd847cfad0d140c"
+  integrity sha512-MbC7IF3RVM+U3G2zo7hQVIfJACJHf/vRYtbJc1Cji82aA62AyoOWk0lgoYqV5SOBEA/IwkbU2oWHZdWjV1s7eA==
+
 "@ianwalter/commits@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@ianwalter/commits/-/commits-1.0.1.tgz#facc6b717d1a202284267bd5c7685893f18e321a"
@@ -192,13 +197,12 @@
     execa "^3.4.0"
     strip "^3.0.0"
 
-"@ianwalter/correct@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/correct/-/correct-1.0.0.tgz#b1c790739dc3298a427dd2207b7b1fa5589e20b0"
-  integrity sha512-lFN56oSiSXYdjK9StWpGS3fI84jtQ9cq28AzWothldbn7Dt0QMgL7i+u6yGUZ2rgieCHtldHlk7G18lUFwMM8g==
+"@ianwalter/correct@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/correct/-/correct-1.1.0.tgz#7ab6243e233cab54db190446f2c9f0ab8908aed4"
+  integrity sha512-enkw8vymGsGDIIVlJQsG7hmN9HQJwwhgnY+Z2ysQBuUhsLCcD4JROZdVGE+oHa2RLPMKMN8phBZJrshUCiauLw==
   dependencies:
     "@ianwalter/base-error" "^6.1.0"
-    "@ianwalter/print" "^5.0.0"
     date-fns "^2.9.0"
     decamelize "^4.0.0"
     is-phone "^2.0.0"
@@ -262,14 +266,14 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.0.68":
-  version "0.0.68"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.68.tgz#051cba4c2daed3b3eff42d567feccefe54ed6295"
-  integrity sha512-BaKR9iZiWpVe6pm4Hvme86kUZiC4I1KO4k8sOlOaEHI3e4Jb5Oydhf+NUXPTA9GpU1idAJCJM8ZOzJryzWUPmw==
+"@ianwalter/nrg@^0.0.69":
+  version "0.0.69"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.69.tgz#abd8154554ff349d0b2f18d8572c22a6e406ecb5"
+  integrity sha512-qIyrUgGgj3akssMXwvtHp+SEl5eslDYiiIjbvwIYofeHwr4cVevsljYqXPgRvLraHrI7G5tD6I4rPr6sugB57g==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
-    "@ianwalter/clone" "^4.1.0"
-    "@ianwalter/correct" "^1.0.0"
+    "@ianwalter/cloneable" "^1.0.0"
+    "@ianwalter/correct" "^1.1.0"
     "@ianwalter/merge" "^5.0.0"
     "@ianwalter/nrg-mq" "^0.0.1"
     "@ianwalter/nrg-router" "^0.2.4"
