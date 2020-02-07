@@ -231,13 +231,14 @@
     selenium-standalone "^6.17.0"
     webdriverio "^5.18.6"
 
-"@ianwalter/bff@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-9.0.0.tgz#2056f3ad059c0303d4b46a5a1683940e2a1bfc72"
-  integrity sha512-QDUCEsAoUDyi2qnxhIdZDAV7opb9jEZQqGJqrDk6A4cvcA+mrPMFcRKKSCEwSJTV3cdxms6rAme46BTFqG9OrA==
+"@ianwalter/bff@^9.1.0":
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-9.1.0.tgz#9bcdd045a5b543bbd8699cffb1856e3c0efc2e90"
+  integrity sha512-YPM0d/y2iQuQJzPSmEpEXzwQ/VmGQEzxdKHwaXBfmTWpqlfHKZRFBoXxSEIDCEpLuAhfIQg+Ofp2oGM++4gnxg==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/clone" "^4.1.0"
+    "@ianwalter/cloneable" "^1.0.1"
     "@ianwalter/print" "^5.0.0"
     "@ianwalter/subpub" "^2.0.0"
     "@ianwalter/timer" "^1.1.0"
@@ -318,6 +319,11 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/cloneable/-/cloneable-1.0.0.tgz#a6ebcf3004dcf4a4ba5970005cd847cfad0d140c"
   integrity sha512-MbC7IF3RVM+U3G2zo7hQVIfJACJHf/vRYtbJc1Cji82aA62AyoOWk0lgoYqV5SOBEA/IwkbU2oWHZdWjV1s7eA==
+
+"@ianwalter/cloneable@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/cloneable/-/cloneable-1.0.1.tgz#627489e86020f035559b263762e1ff6329b8c08e"
+  integrity sha512-1+SjoHTyEMK/UB4ASZpQdArMk2K3RlSptbG0GVeNXLfWeo5H+RdTbhcEk4GUYKEf3SskIXYrS8FvtL02d/6D+g==
 
 "@ianwalter/commits@^1.0.1":
   version "1.0.1"
