@@ -385,10 +385,10 @@
     amqp-connection-manager "^3.1.1"
     amqplib "^0.5.5"
 
-"@ianwalter/nrg-router@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg-router/-/nrg-router-0.2.4.tgz#51e74dda656d6f040a9a10ad6358b6614357b6ae"
-  integrity sha512-v/l7sl/4CnxCIeLUr4ZX9BSLwi6i05FGJ+fO1keliJqUU7ayPqt+zbTiT6qN/tXXa8M3qJGhZENRDNzlYybCgg==
+"@ianwalter/nrg-router@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg-router/-/nrg-router-0.2.5.tgz#564ea5437cac1187d4057b454c74f38bd57e941d"
+  integrity sha512-CW5BBTm7R3RHeJmgYXmbco0y3U3+w2gEBD0+u+2523AXOoGtiKMV2OeTFQhsrhH6NRh4EO4g47P88a4emkL+eg==
   dependencies:
     "@ianwalter/print" "^5.0.0"
     "@ianwalter/router" "^3.1.4"
@@ -404,17 +404,17 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.0.69":
-  version "0.0.69"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.69.tgz#abd8154554ff349d0b2f18d8572c22a6e406ecb5"
-  integrity sha512-qIyrUgGgj3akssMXwvtHp+SEl5eslDYiiIjbvwIYofeHwr4cVevsljYqXPgRvLraHrI7G5tD6I4rPr6sugB57g==
+"@ianwalter/nrg@^0.0.70":
+  version "0.0.70"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.70.tgz#da7dfd8ba857400a5cd6f41a28c219842f69d1df"
+  integrity sha512-VLZVzAOMMtuEwkBu/wO6pn4dQH0FHIJyBMV6Pgk6/hUMkdeNs9Ugn7rQ/sHXuKZYatVPPfa5CAs9bNn37zexOg==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/cloneable" "^1.0.0"
     "@ianwalter/correct" "^1.1.0"
     "@ianwalter/merge" "^5.0.0"
     "@ianwalter/nrg-mq" "^0.0.1"
-    "@ianwalter/nrg-router" "^0.2.4"
+    "@ianwalter/nrg-router" "^0.2.5"
     "@ianwalter/nrg-session" "^6.0.0"
     "@ianwalter/pino-print" "^3.1.0"
     "@ianwalter/print" "^5.0.0"
