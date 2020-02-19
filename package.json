@@ -44,7 +44,7 @@
     "dotenv": "^8.2.0",
     "download": "^7.1.0",
     "execa": "^4.0.0",
-    "make-dir": "^3.0.0"
+    "make-dir": "^3.0.2"
   },
   "devDependencies": {
     "@ianwalter/bff": "^9.4.1",
