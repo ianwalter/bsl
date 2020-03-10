@@ -396,6 +396,13 @@
     amqp-connection-manager "^3.2.0"
     amqplib "^0.5.5"
 
+"@ianwalter/nrg-pino-logger@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg-pino-logger/-/nrg-pino-logger-3.0.0.tgz#b3c9719e51c1b012f87bf76958ddde7153dbbeb6"
+  integrity sha512-lcZvzdIr5mBSI+7A2VNur1dQey8aPw236IYR9+catjk506AqvUU9ZvJVDtCPVt0H3YFBVn/FY0mBIdUQ3tF9JQ==
+  dependencies:
+    pino-http "^4.4.0"
+
 "@ianwalter/nrg-router@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/nrg-router/-/nrg-router-0.4.0.tgz#e8183e9da0ad555426a642d2a89bb2ffa4e827a3"
@@ -415,16 +422,17 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.0.76":
-  version "0.0.76"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.76.tgz#974ede7252a24687ceb9a1a2754cf06522b3a230"
-  integrity sha512-1uZ21dBicy4RdRWcd7NzUWNze61/bSL+Vh0Ra1IuekheDZwbKfcc2v4zCTCFChSXC5d2hpTM6b7BVMJVN//BsA==
+"@ianwalter/nrg@^0.0.77":
+  version "0.0.77"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.77.tgz#31d6d7238197622f53fc395d7a65213d9bcfbf00"
+  integrity sha512-UD6emDhecJt+6lHz5FQdlIC1Cec6jJzo3TZLMM8GHx87UH8JAy6MtdzKW9rgxwWpdMdCMjtPzpnk9Oe0Yod83g==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/cloneable" "^1.0.1"
     "@ianwalter/correct" "^1.1.0"
     "@ianwalter/merge" "^7.0.0"
     "@ianwalter/nrg-mq" "^0.0.2"
+    "@ianwalter/nrg-pino-logger" "^3.0.0"
     "@ianwalter/nrg-router" "^0.4.0"
     "@ianwalter/nrg-session" "^6.0.0"
     "@ianwalter/pino-print" "^4.2.0"
@@ -442,10 +450,9 @@
     koa-compress "^3.0.0"
     koa-csrf "^3.0.8"
     koa-json "^2.0.2"
-    koa-pino-logger jstewmon/koa-pino-logger#cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104
     koa-redis "^4.0.1"
     koa-send "^5.0.0"
-    koa-webpack ianwalter/koa-webpack
+    koa-webpack "^5.3.0"
     mailgen "^2.0.10"
     nanoid "^2.1.11"
     nodemailer "^6.4.4"
@@ -3374,6 +3381,13 @@ fast-safe-stringify@^2.0.7:
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.0.7.tgz#124aa885899261f68aedb42a7c080de9da608743"
   integrity sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==
 
+fast-url-parser@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/fast-url-parser/-/fast-url-parser-1.1.3.tgz#f4af3ea9f34d8a271cf58ad2b3759f431f0b318d"
+  integrity sha1-9K8+qfNNiicc9YrSs3WfQx8LMY0=
+  dependencies:
+    punycode "^1.3.2"
+
 fastq@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.6.0.tgz#4ec8a38f4ac25f21492673adb7eae9cfef47d1c2"
@@ -4998,13 +5012,6 @@ koa-json@^2.0.2:
     koa-is-json "1"
     streaming-json-stringify "3"
 
-koa-pino-logger@jstewmon/koa-pino-logger#cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104:
-  version "2.1.3"
-  uid cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104
-  resolved "https://codeload.github.com/jstewmon/koa-pino-logger/tar.gz/cdfb9806508b7fc6e89e6a2ca1c92cd927ce6104"
-  dependencies:
-    pino-http "^4.1.0"
-
 koa-redis@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/koa-redis/-/koa-redis-4.0.1.tgz#57ac1b46d9ab851221a9f4952c1e8d4bf289db40"
@@ -5025,10 +5032,10 @@ koa-send@^5.0.0:
     mz "^2.7.0"
     resolve-path "^1.4.0"
 
-koa-webpack@ianwalter/koa-webpack:
-  version "5.2.4"
-  uid "8318d1b90830e008aeac0991c6602b2817bd5ee7"
-  resolved "https://codeload.github.com/ianwalter/koa-webpack/tar.gz/8318d1b90830e008aeac0991c6602b2817bd5ee7"
+koa-webpack@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/koa-webpack/-/koa-webpack-5.3.0.tgz#b95bd83283ff665088f0ebdd10d47fc6857a9cbc"
+  integrity sha512-dAZ1Dpv5anpoKijjKHwxUv5nMumreEZtCvqneRlSltWXviJ7KiilwveuK2BMudrRsg8kWq52mo8ETR+VewE6Cg==
   dependencies:
     "@hapi/joi" "^15.0.0"
     app-root-path "^2.0.1"
@@ -6519,11 +6526,12 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
-pino-http@^4.1.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/pino-http/-/pino-http-4.3.0.tgz#ebe0505d871efc2f8a5e1ca57f4cbd5667708007"
-  integrity sha512-9QrA/5KykS5TLqJPzFQY08bLA3iwHrLEVeM6PYKU95VqB54X/eJKev4A6sagf5UUxeUimVDcWt5wcp5SJHHSvg==
+pino-http@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/pino-http/-/pino-http-4.4.0.tgz#9bb26db026aa6a7b73492c76c58157d3ffd31f12"
+  integrity sha512-uPGPNGT9WV5GrRydEPR8A1bCXUutmI4M7VIQ6InoJTC1ddjgScQPZt/uxDOQkdTTjP2RJ1dJH5ML+V1f5Q/JKg==
   dependencies:
+    fast-url-parser "^1.1.3"
     pino "^5.0.0"
     pino-std-serializers "^2.4.0"
 
@@ -6726,7 +6734,7 @@ punycode@2.x.x, punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-punycode@^1.2.4, punycode@^1.4.1:
+punycode@^1.2.4, punycode@^1.3.2, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
   integrity sha1-wNWmOycYgArY4esPpSachN1BhF4=
