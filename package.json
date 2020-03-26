@@ -52,7 +52,7 @@
     "@ianwalter/eslint-config": "^4.0.1",
     "@ianwalter/nrg": "^0.0.82",
     "@ianwalter/release": "^5.0.0",
-    "@ianwalter/renovate-config": "^1.2.0"
+    "@ianwalter/renovate-config": "^1.3.0"
   },
   "bff": {
     "plugins": [
