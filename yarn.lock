@@ -217,6 +217,11 @@
     isemail "^3.2.0"
     zxcvbn "^4.4.2"
 
+"@ianwalter/dot@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dot/-/dot-0.0.1.tgz#c909d099c9b29140a940aa897281845ae6585542"
+  integrity sha512-/+PRPXPdoNJkcJQHWiTOzjneRp9WrM5e8uHZOS6Hm0ghwijaeI6nO4In8FjLaxZAtkwJAuuLDvjD0jdbRcza6A==
+
 "@ianwalter/eslint-config@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/eslint-config/-/eslint-config-5.0.0.tgz#0648e142d75859ac5eecd817f1605192e83d2c75"
@@ -291,10 +296,10 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.0.86":
-  version "0.0.86"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.86.tgz#cc4f62e7d093b265f04db75a88e95d3e5377ce9a"
-  integrity sha512-oS6lWGHQCnw/+wWbjJnpUrTnfE0x6gxUDWiMDSOHmUniQJhZ//OZmhqnETwalkd+eqEmXdU/kPo5x+QrLdHO9g==
+"@ianwalter/nrg@^0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.0.87.tgz#03412740ec696a47ba1923691174511c17f054f4"
+  integrity sha512-Fe+CEfjzYK+sEcZVNUcSK1brQ9SgaPuCM6ofZHpr0zEMnktFIqn0/rMiue9XpmajRvvI4ElGTYE9CLsdHRCUlw==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/cloneable" "^2.0.0"
@@ -308,6 +313,7 @@
     "@ianwalter/print" "^6.0.0"
     "@ianwalter/requester" "^2.2.0"
     "@ianwalter/url" "^1.1.0"
+    "@ianwalter/without" "^0.0.1"
     bcrypt "4.0.1"
     date-fns "^2.14.0"
     devalue "^2.0.1"
@@ -326,9 +332,9 @@
     mailgen "^2.0.13"
     nanoid "^3.1.9"
     nodemailer "^6.4.8"
-    objection "^2.1.5"
+    objection "^2.1.6"
     pg "^8.2.1"
-    pino "^6.3.1"
+    pino "^6.3.2"
     pkg-dir "^4.2.0"
     read-pkg-up "^7.0.1"
     require-from-string "^2.0.2"
@@ -490,6 +496,13 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/url/-/url-1.1.0.tgz#3a2caf69c51cca62899771cc9ca231995a168598"
   integrity sha512-iq8vz8tWnheulmkdCWdjPipTeXGcSY8HtPuNDyZ53Ggyz19F/KKWRJUkftpirWSalAYdjTf2EAXlVppT6SxtAw==
+
+"@ianwalter/without@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/without/-/without-0.0.1.tgz#eb1c2ccd6b138ce2ebfd0504faae1054181e9127"
+  integrity sha512-RemqRirH/1nzXi+5o3qagtkwHzgNvuxtXAqlK0vI/6ZEKqgAQFkp9/tUMTChwaxrtvcSh2j16f3kxNdTQWdg4w==
+  dependencies:
+    "@ianwalter/dot" "^0.0.1"
 
 "@jest/types@^25.3.0":
   version "25.3.0"
@@ -5752,10 +5765,10 @@ object.values@^1.1.0:
     function-bind "^1.1.1"
     has "^1.0.3"
 
-objection@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/objection/-/objection-2.1.5.tgz#eab081b4a98a2b42282b60fba064652f2625196e"
-  integrity sha512-y4wyMHy0zByvcXPL+A2wD7wVRUnn/b9r+D6ms2LSmQSwo2WPoifwOOdwkyIGZ6312bp2YgzuEoAG/xv44RKevA==
+objection@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/objection/-/objection-2.1.6.tgz#b276d075fa58c5540a00af407cd4dc7f9d539f02"
+  integrity sha512-t6dfHz5ND5QejBg9qpn0evikStFo8NhU1zKKnXsMVap15NUFWwb/nhcJ6uAyhH8Jij6qr6iC6DN8E9Sk3/mDpg==
   dependencies:
     ajv "^6.12.0"
     db-errors "^0.2.3"
@@ -6265,10 +6278,10 @@ pino@^5.0.0:
     quick-format-unescaped "^3.0.3"
     sonic-boom "^0.7.5"
 
-pino@^6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/pino/-/pino-6.3.1.tgz#c58ea36d66a7f0631dbc7472652e9b05988abd24"
-  integrity sha512-RgT010a5FfnxJ2AwB0TqcEuM+gNsnd08PZnCob98JSTLldLF0GMFJ/Z1VE/rdl5yJCqcoLwftmZSwSFY4/Hc2g==
+pino@^6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-6.3.2.tgz#55f73aa61584774ca5984068ffb78e8d519ce19e"
+  integrity sha512-EiP3L1hoFw19KPocWimjnfXeysld0ne89ZRQ+bf8nAeA2TyuLoggNlibAi+Kla67GvQBopLdIZOsh1z/Lruo5Q==
   dependencies:
     fast-redact "^2.0.0"
     fast-safe-stringify "^2.0.7"
