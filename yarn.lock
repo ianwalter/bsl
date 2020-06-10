@@ -79,10 +79,10 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/base-error/-/base-error-6.1.0.tgz#a25f8a57e04877f6823251c5f1e05c7c060a0130"
   integrity sha512-a1oe3gdY7aVJotysd2hbkARZdIXd80b1xL+kcJGQ/5VzEv7bMhQ+vlamv8DLz828uz/dxMCVb4++n75RyVUs2Q==
 
-"@ianwalter/bff-webdriver@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff-webdriver/-/bff-webdriver-6.0.0.tgz#ed0e4529e723ef19df470d643470b17e7801962e"
-  integrity sha512-y3F7+K7hftxOlDkJpTDmlR7lttLQLlk7WCxgGuOeEBawQ5hNHyK/UI0oE6O6XFwuBs0lgKfFijXQqeMHwFWsow==
+"@ianwalter/bff-webdriver@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff-webdriver/-/bff-webdriver-6.0.2.tgz#9caa56b21d0306f90dc929dce31bbdb5655567f9"
+  integrity sha512-4lTdsY05Xt6i66xqPeDcf1iWq0Jv+fXDIKDl7sCeG9NZJxtH+zYKjwyzCAGb5gcA2/2SIlJP55qQAeMQPqoILw==
   dependencies:
     "@ianwalter/bsl" "^3.0.0"
     "@ianwalter/cli" "^4.1.0"
