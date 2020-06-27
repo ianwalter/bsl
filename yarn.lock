@@ -231,11 +231,6 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/dot/-/dot-1.0.2.tgz#50de0bb5693ef7524edd3f0d70455ce0169c8fe5"
   integrity sha512-+Q+AavPYHmIM6Pbpkb7rLzaDVQS0D1td1YqZ2oNtTScPt1UFsnol2QsY+pdTalLrjtr56qotmIo+pAJ1pWEdEw==
 
-"@ianwalter/dot@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@ianwalter/dot/-/dot-1.0.3.tgz#2d586710573526e07d65c499a3c86fe4b3d7a849"
-  integrity sha512-LZvhyVQn5BM0/5lANNz3Nh9sTGD5JvZdEmkg5UsN+bQXpRUI9yokw+HjDKjTAnRdpF93pBhfLXAIPebRA/RBBA==
-
 "@ianwalter/dot@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@ianwalter/dot/-/dot-1.0.4.tgz#32d9f98d59382475798c65bf686e95328327bfd3"
@@ -254,12 +249,12 @@
     eslint-plugin-promise "^4.2.1"
     eslint-plugin-standard "^4.0.1"
 
-"@ianwalter/extract@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/extract/-/extract-1.0.0.tgz#f77b85d6f4d0bac89e6e3100dc22725631ccc171"
-  integrity sha512-KchGXI6WvD/yw4r5YPYPFA+KlBlJWQjrq+DmcCDp0sIFw2L0DykROsFvXQ8No6cTD+Te8lj2yz2CO9tO0GIt4Q==
+"@ianwalter/extract@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/extract/-/extract-1.0.1.tgz#51f9bd96396dd1ae8d9b73d3aed71608c7b6b497"
+  integrity sha512-QlhQTeFzmvab6soS9uivNNn7P/hgFDWqJOsjW8KzHw+YYQuBjd8uHPr3N8j6Ogk31cQ955MBCZ6dLYKlE3bbfw==
   dependencies:
-    "@ianwalter/dot" "^1.0.3"
+    "@ianwalter/dot" "^1.0.4"
 
 "@ianwalter/log@^3.1.0":
   version "3.1.0"
@@ -301,13 +296,13 @@
     amqp-connection-manager "^3.2.0"
     amqplib "^0.5.5"
 
-"@ianwalter/nrg-print@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg-print/-/nrg-print-0.0.2.tgz#5a1976778058397c8a61eb0f6e509b1b535f1d18"
-  integrity sha512-bfFhvptO2lNMSfdiuKHxh0kvb6TyrdXStcEF+xSXMtNxvVnA/HB15BYJPW4bdoqngobwxx6HYbAfDzl/3kKV+Q==
+"@ianwalter/nrg-print@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg-print/-/nrg-print-0.0.3.tgz#05a09fcda529bd73df4b5282b2ac8bc4e030c797"
+  integrity sha512-drziEN8EKGdPSbBqFQe0eKq+78SszNNj9sllKs5294fiQ5svoPwPxo0z+bF7K8FLw9FsEqz0CqvS0M1pMslubQ==
   dependencies:
     "@ianwalter/cloneable" "^2.0.0"
-    "@ianwalter/print" "^8.0.2"
+    "@ianwalter/print" "^8.0.3"
     "@ianwalter/timer" "^2.0.2"
 
 "@ianwalter/nrg-router@^0.6.0":
@@ -328,22 +323,22 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.1.2.tgz#fdf0f1c5755ab75c7a07c660ed2771bc86b736fa"
-  integrity sha512-ZCRx2/sSjY9CS7/UerAcQmBpLxkHa2eNMjdCrDMwQIcDthMjCSSwEvD15rqGj7BkbbaAYEnn6pS30i51/EpmeQ==
+"@ianwalter/nrg@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.1.3.tgz#e37b4cc4020c6885a03bec8ae91c8da3c0a2bc95"
+  integrity sha512-eE7DunHlKixwFHi48DChzmPbGX8ejscUhzq2dKjmYycC2A23TE1Z9B33MtK3L3CNpEH9pKK+JVYtM5inPL5JTQ==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/cloneable" "^2.0.0"
     "@ianwalter/correct" "^1.1.0"
     "@ianwalter/dot" "^1.0.4"
-    "@ianwalter/extract" "^1.0.0"
+    "@ianwalter/extract" "^1.0.1"
     "@ianwalter/merge" "^9.0.1"
     "@ianwalter/nrg-mq" "^0.0.2"
-    "@ianwalter/nrg-print" "^0.0.2"
+    "@ianwalter/nrg-print" "^0.0.3"
     "@ianwalter/nrg-router" "^0.6.0"
     "@ianwalter/nrg-session" "^6.0.0"
-    "@ianwalter/print" "^8.0.2"
+    "@ianwalter/print" "^8.0.3"
     "@ianwalter/requester" "^2.2.0"
     "@ianwalter/url" "^2.0.0"
     bcrypt "5.0.0"
@@ -486,15 +481,15 @@
     marked-terminal "^4.1.0"
     strip-ansi "^6.0.0"
 
-"@ianwalter/print@^8.0.2":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-8.0.2.tgz#7df354703a66ce6352bbb5aadc85f6438ef0b6b6"
-  integrity sha512-AuKqIO25J4iZmpFeC3Ykx8StLP9PzoLhDP7+1SCSPno8hFmDySaWtPJhp07fcyWqxTDT8b2cyVD0IvyQCZRPWA==
+"@ianwalter/print@^8.0.3":
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-8.0.3.tgz#28f520eabff2068f93aeace20ca56e07595946d1"
+  integrity sha512-wq6DdjY3N760nf4mJioub45ZLL+8G9UohSV+yUh69iZ0tHzvztWvBxWT3m8H1W41NEIIWWkpXl/jz8WV4n/Srg==
   dependencies:
     "@ianwalter/chromafi" "^1.0.1"
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/clone" "^6.0.1"
-    "@ianwalter/dot" "^1.0.3"
+    "@ianwalter/dot" "^1.0.4"
     "@ianwalter/merge" "^9.0.1"
     chalk "^4.1.0"
     has-ansi "^4.0.0"
