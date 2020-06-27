@@ -50,7 +50,7 @@
     "@ianwalter/bff": "^9.10.0",
     "@ianwalter/bff-webdriver": "^6.0.3",
     "@ianwalter/eslint-config": "^5.1.0",
-    "@ianwalter/nrg": "^0.1.2",
+    "@ianwalter/nrg": "^0.1.3",
     "@ianwalter/release": "^5.0.2",
     "@ianwalter/renovate-config": "^1.3.0"
   },
