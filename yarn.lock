@@ -236,6 +236,11 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/dot/-/dot-1.0.3.tgz#2d586710573526e07d65c499a3c86fe4b3d7a849"
   integrity sha512-LZvhyVQn5BM0/5lANNz3Nh9sTGD5JvZdEmkg5UsN+bQXpRUI9yokw+HjDKjTAnRdpF93pBhfLXAIPebRA/RBBA==
 
+"@ianwalter/dot@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dot/-/dot-1.0.4.tgz#32d9f98d59382475798c65bf686e95328327bfd3"
+  integrity sha512-bq6q4ZXWzQfBbE29i6trTwAtmmRzSWU0D/fSPhA/tDNbxhSlXDYUxfITtq1cctqi+s4BV4PgYIjxNkLeePK1mQ==
+
 "@ianwalter/eslint-config@^5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/eslint-config/-/eslint-config-5.1.0.tgz#4fdb865b537da0eec3a4bba86c7b79db2cfa1ec2"
@@ -323,15 +328,15 @@
     parseurl "^1.3.1"
     uid-safe "^2.1.4"
 
-"@ianwalter/nrg@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.1.0.tgz#9beaebb7e18e0df1c04449c3b9cdb68aeac608de"
-  integrity sha512-HkMU0va+XW/aeaPW5xVCiSWl8NunPsAlz3YIxMMUR/0jKeMcautrNWWPWaoTonoP1sOn/8vHTilLoi5QygoQsQ==
+"@ianwalter/nrg@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.1.2.tgz#fdf0f1c5755ab75c7a07c660ed2771bc86b736fa"
+  integrity sha512-ZCRx2/sSjY9CS7/UerAcQmBpLxkHa2eNMjdCrDMwQIcDthMjCSSwEvD15rqGj7BkbbaAYEnn6pS30i51/EpmeQ==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/cloneable" "^2.0.0"
     "@ianwalter/correct" "^1.1.0"
-    "@ianwalter/dot" "^1.0.3"
+    "@ianwalter/dot" "^1.0.4"
     "@ianwalter/extract" "^1.0.0"
     "@ianwalter/merge" "^9.0.1"
     "@ianwalter/nrg-mq" "^0.0.2"
