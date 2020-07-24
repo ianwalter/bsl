@@ -330,10 +330,10 @@
   dependencies:
     "@ianwalter/requester" "^2.4.1"
 
-"@ianwalter/nrg@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.3.0.tgz#19d0780a6c16983e0238481a19fb1faa47ee5339"
-  integrity sha512-lOFl7EIdY7d9okGwk9M/KKVgH/3EePxvdoGc4xan4GJpi5DCcDeHHkIrbIazkLI9rwee8I3thwkGnL2E2AsdWg==
+"@ianwalter/nrg@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/nrg/-/nrg-0.3.1.tgz#a0e60fbd4853e2071271fe2a3cbc95a9efc53d9f"
+  integrity sha512-wntnZqIxKKz2kQuHKegwYGnA/nJ3Emo/LGtaAmHUa+bw3EulXfd4qh1uoevAx8d+pbnI9BQS64aoXOIjAVfNyA==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/cloneable" "^2.0.0"
