@@ -1,0 +1,9 @@
+name: BrowserStack Local Container
+description: Run BrowserStack Local easily
+author: Ian Walter
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: globe
+  color: blue

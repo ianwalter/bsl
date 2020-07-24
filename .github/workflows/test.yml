@@ -6,16 +6,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: node:12.16-slim
     timeout-minutes: 3
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install
-        run: yarn
+        uses: ./
+        with:
+          args: pnpm i
       - name: Test
-        run: yarn test
+        uses: ./
+        with:
+          args: pnpm t
         env:
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
