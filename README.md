@@ -6,7 +6,7 @@
 ## Installation
 
 ```console
-yarn add @ianwalter/bsl --dev
+pnpm add @ianwalter/bsl --save-dev
 ```
 
 ## Usage

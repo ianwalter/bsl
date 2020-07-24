@@ -66,7 +66,7 @@ async function install () {
   print.success(
     `Downloaded BrowserStackLocal binary for ${process.platform}.`, '\n',
     oneLine`
-      Run ${chalk.magenta('yarn bsl move')} to move the binary to your home
+      Run ${chalk.magenta('pnpm bsl move')} to move the binary to your home
       directory if you want other installations to re-use it.
     `
   )

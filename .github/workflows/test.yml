@@ -6,18 +6,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: ./
     timeout-minutes: 3
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install
-        uses: ./
-        with:
-          args: pnpm i
+        run: pnpm i
       - name: Test
-        uses: ./
-        with:
-          args: pnpm t
+        run: pnpm t
         env:
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
