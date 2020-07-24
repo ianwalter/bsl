@@ -13,7 +13,7 @@ jobs:
       - name: Test
         uses: ./
         with:
-          args: pnpm i && pnpm t
+          args: bash -c "pnpm i && pnpm t"
         env:
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
